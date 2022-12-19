@@ -7,8 +7,9 @@
  <p>Challenge ONE Sprint 01: Construa um decodificador de texto com Javascript
 
 <h3 align="center">
-    <img src="image-readme/capa.png" alt="JAVA-SCRIPT" width="300" height="200">
+    <img src="image-readme/capa1.png" alt="JAVA-SCRIPT" width="300" height="200">
     <img src="image-readme/capa2.png" alt="JAVA-SCRIPT" width="300" height="200">
+    <img src="image-readme/capa3.png" alt="JAVA-SCRIPT" width="300" height="200">
 </h3>
 
 ##  🚀 Tecnologias Usadas

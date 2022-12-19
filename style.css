@@ -1,0 +1,50 @@
+body {
+    background-color: #F3F5FC;
+    color: #333;
+}
+
+header {
+    padding: 50px 0;
+    background-color: aqua;
+}
+
+#banner {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+main section {
+    display: inline-block;
+    background-color: red;
+}
+
+#mensagem {
+    margin: 50px;
+    width: 680px;
+    height: 288px;
+    background-color: aqua;
+    color: #0A3871;
+    text-align: initial;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    border: none;
+}
+
+#resultado{
+    margin: 50px;
+    width: 450px;
+    height: 588px;
+    background-color: aqua;
+    color: #0A3871;
+    text-align: initial;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+    border: none;
+}

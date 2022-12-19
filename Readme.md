@@ -27,7 +27,7 @@ https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---
 ```bash
 https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?node-id=0%3A1&t=1InX4dUf4CVZrvsM-0
 ```
-<br><br>
+<br>
 
 #  🔗 Challenge ONE Sprint 01:
 Construa um decodificador de texto com Javascript

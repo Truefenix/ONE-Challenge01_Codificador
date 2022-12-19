@@ -33,10 +33,7 @@ https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---
 Construa um decodificador de texto com Javascript
 
 ```bash
-
-# Copia e Cola
 https://www.alura.com.br/challenges/challenge-one-logica/sprint01-construa-decodificador-texto-com-javascript
-
 ```
 ##  🐠 Aluno
 <table align="center">

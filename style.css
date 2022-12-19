@@ -1,50 +1,69 @@
-body {
-    background-color: #F3F5FC;
-    color: #333;
-}
-
-header {
-    padding: 50px 0;
-    background-color: aqua;
-}
-
+/* Cabeçalho */
 #banner {
-    position: absolute;
-    top: 5%;
-    left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
 }
 
-main section {
-    display: inline-block;
-    background-color: red;
+body {
+    background-color: #b9c8ff71;
+}
+
+textarea {
+    color: #194c8a;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.campo { margin: 0 7px; }
+
+#entrada { width: 65vw; }
+#resultado { width: 20vw; margin-top: -12vh; }
+
+textarea {
+    background-color: transparent;
+    resize: none;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.2em;
+    border: none;
 }
 
 #mensagem {
-    margin: 50px;
-    width: 680px;
-    height: 288px;
-    background-color: aqua;
-    color: #0A3871;
-    text-align: initial;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    border: none;
+    color: red;
+    width: 400px;
 }
 
-#resultado{
-    margin: 50px;
-    width: 450px;
-    height: 588px;
-    background-color: aqua;
-    color: #0A3871;
-    text-align: initial;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 150%;
-    border: none;
+#text-resultado { height: 65vh; }
+
+/* Entrada */
+textarea:focus { outline: none; }
+
+/* Resultado (saída) */
+#text-resultado {
+    background: url(image/image-respond.png);
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+    background-size: 100%;
+    background-position: center center;
+    border: 1px solid #333;
+    border-radius: 32px;
+    transition: all 250ms ease-in-out;
+}
+
+/* Modal do botão copiar */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(232, 237, 252); 
+    text-align: center;
+    animation: reveal 1500ms ease-in-out;
 }

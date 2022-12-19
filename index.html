@@ -12,34 +12,31 @@
 
 	<body>
 		<header>
-            <div class="caixa">
+            <div class="cabeçalho" id="entrada">
                 <h1><img id="banner" src="image/logo-Alura.png" alt="logo-Alura"></h1>
             </div>
 		</header>
 
 		<main>
-            <section class="campo">
-                <label for="mensagem"></label>
-                <input type="text" id="mensagem" class="input-padrao" required 
-                placeholder="Digite seu texto" autofocus>
+        <section class="campo" id="entrada">
+            <label for="mensagem"></label>
+            <textarea id="mensagem" placeholder="Digite seu texto" autofocus></textarea>
 
-                <input class="botao1" type="button" value="CRIPTOGRAFAR" id="botaoCriptografar">
-            </section>
+            <div class="botoes">
+                <button id="botaoCriptografar" class="bloqueado">Criptografar</button>
+                <button id="btn-descriptografar" class="bloqueado">Descriptografar</button>
+            </div>
+        </section>
 
-            <!-- <label for="mensagem"></label>
-            <textarea cols="70" rows="10" id="mensagem" 
-                placeholder="insira o texto aqui" required>
-            </textarea> -->
+        <section class="campo" id="resultado">
+            <textarea id="text-resultado" readonly></textarea> <!--readonly -> é só para ler-->
 
-            <section class="campo">
-                <label for="resultado"></label>
-                <input type="text" id="resultado" class="input-padrao" required 
-                placeholder="Digite seu texto" autofocus>
-                
-                <input class="botao2" type="button" value="DESCRIPTOGRAFAR" id="botaoDescriptografar" >
-            </section>
-
-        </main>
+            <div class="botoes">
+                <button id="btn-copiar" class="bloqueado">Copiar</button>
+                <button id="btn-limpar" class="bloqueado">Limpar</button>
+            </div>
+        </section>
+    </main>
 
         <footer></footer>
 		

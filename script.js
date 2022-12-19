@@ -1,15 +1,8 @@
-/*<html>
-    <input></input>
-    <button></button>
-
-    <textarea class="text" rows="5" id="textArea"></textarea>
-</html>*/
-
 // botão -> evento click.
 document.getElementById("botaoCriptografar").addEventListener("click", function () {
 
 // texto = valor do input.
-var texto = document.querySelector("input").value;
+var texto = document.getElementById("text-resultado").value;
 
 // Função de Mudar as letras
 function mudarLetra(texto) {

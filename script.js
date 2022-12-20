@@ -1,5 +1,5 @@
-// botão -> evento click.
-document.getElementById("botaoCriptografar").addEventListener("click", function () {
+// Função de Codificar as Letras
+document.getElementById("botaoCodificar").addEventListener("click", function () {
 
 // texto = valor da mensagem.
 var texto = document.getElementById("mensagem").value;
@@ -11,10 +11,10 @@ function mudarLetra(texto) {
         if(texto == texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "")) {
 
             texto = texto.replaceAll('e', 'enter')
-            .replaceAll('i', 'imes')
-            .replaceAll('a', 'ai')
-            .replaceAll('o', 'ober')
-            .replaceAll('u', 'ufat');
+                            .replaceAll('i', 'imes')
+                                .replaceAll('a', 'ai')
+                                    .replaceAll('o', 'ober')
+                                        .replaceAll('u', 'ufat');
             
             return texto.toLowerCase();
         } else {
@@ -23,7 +23,33 @@ function mudarLetra(texto) {
         }
     }
 
-    // o valor de textArea = texto.
+    // o valor de text-resultado = texto.
+    document.getElementById("text-resultado").value = mudarLetra(texto);
+})
+
+// Função de Desciptografar
+document.getElementById("botaoDescodificar").addEventListener("click", function () {
+
+    var texto = document.getElementById("mensagem").value;
+    
+    function mudarLetra(texto) {
+        
+            if(texto == texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "")) {
+    
+                texto = texto.replaceAll('enter', 'e')
+                                .replaceAll('imes', 'i')
+                                    .replaceAll('ai', 'a')
+                                        .replaceAll('ober', 'o')
+                                            .replaceAll('ufat', 'u');
+                
+                return texto.toLowerCase();
+            } else {
+    
+                alert("Só pode letras sem acentos!!!");
+            }
+        }
+    
+    // o valor de text-resultado = texto.
     document.getElementById("text-resultado").value = mudarLetra(texto);
 })
 

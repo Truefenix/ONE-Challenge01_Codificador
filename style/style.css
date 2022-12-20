@@ -1,29 +1,32 @@
 #banner {
+
     margin-top: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
 }
 
 body {
     background-color: #b9c8ff71;
 }
 
-textarea {
-    color: #194c8a;
-    font-weight: bold;
-}
-
+/* Posicionamento do main*/
 main {
     padding: 20px 0;
     display: flex;
     justify-content: center;
 }
 
-.campo { margin: 0 7px; }
+#entrada {
+    width: 65vw;
+}
 
-#entrada { width: 65vw; }
-#resultado { width: 20vw; margin-top: -12vh; }
+/*Caixa de texto mensagem*/
+#mensagem {
+    color: #194c8a;
+    width: 400px;
+}
 
 textarea {
+    font-weight: bold;
     background-color: transparent;
     resize: none;
     width: 100%;
@@ -32,37 +35,31 @@ textarea {
     border: none;
 }
 
-#mensagem {
-    color: red;
-    width: 400px;
+/* Retira a linha da borda do textArea */
+textarea:focus {
+    outline: none;
 }
-
-#text-resultado { height: 65vh; }
-
-/* Entrada */
-textarea:focus { outline: none; }
 
 /* Resultado (saída) */
-#text-resultado {
-    background: url(image/image-respond.png);
-    background-repeat: no-repeat;
-    background-color: rgb(255, 255, 255);
-    background-size: 100%;
-    background-position: center center;
-    border: 1px solid #333;
-    border-radius: 32px;
-    transition: all 250ms ease-in-out;
+#resultado {
+    width: 20vw; margin-top: -12vh;
 }
 
-/* Modal do botão copiar */
+/* Tamanho da caixa de resultado */
+#text-resultado {
+    height: 65vh;
+}
 
-.modal {
-    display: none;
-    position: fixed;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(232, 237, 252); 
-    text-align: center;
-    animation: reveal 1500ms ease-in-out;
+/* Estilo da caixa de resultado */
+#text-resultado {
+    background: url(../image/pesquisa.svg);
+    background-repeat: no-repeat; /*não repetir imagem*/
+    background-position: center center; /*imagem no centro*/
+
+    background-color: rgb(167, 192, 221);
+    background-size: 100%;
+
+    border: 3px; /*borda*/
+    border-radius: 32px;
+    transition: all 250ms ease-out;
 }

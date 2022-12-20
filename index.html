@@ -6,8 +6,8 @@
         <meta name="Eduardo-Roque" content="Alura">
         <meta name="Challenge-One" content="Decodificador_de_Texto">
         <meta name="keyworlds" content="HTML5, CSS, JS">
-        <link rel="stylesheet" href="reset.css">
-		<link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style/reset.css">
+		<link rel="stylesheet" href="style/style.css">
 	</head>
 
 	<body>
@@ -18,25 +18,27 @@
 		</header>
 
 		<main>
-        <section class="campo" id="entrada">
-            <label for="mensagem"></label>
-            <textarea id="mensagem" placeholder="Digite seu texto" autofocus></textarea>
+            <!--Caixa de Texto da mensagem-->
+            <section class="campo" id="entrada">
+                <label for="mensagem"></label>
+                <textarea id="mensagem" placeholder="Digite seu texto" autofocus></textarea>
 
-            <div class="botoes">
-                <button id="botaoCriptografar" class="bloqueado">Criptografar</button>
-                <button id="btn-descriptografar" class="bloqueado">Descriptografar</button>
-            </div>
-        </section>
+                <div class="botoes">
+                    <button id="botaoCriptografar" class="bloqueado">Criptografar</button>
+                    <button id="btn-descriptografar" class="bloqueado">Descriptografar</button>
+                </div>
+            </section>
 
-        <section class="campo" id="resultado">
-            <textarea id="text-resultado" readonly></textarea> <!--readonly -> é só para ler-->
+            <!--Caixa de Texto do Resultado-->
+            <section class="campo" id="resultado">
+                <textarea id="text-resultado" readonly></textarea> <!--readonly -> é só para ler-->
 
-            <div class="botoes">
-                <button id="btn-copiar" class="bloqueado">Copiar</button>
-                <button id="btn-limpar" class="bloqueado">Limpar</button>
-            </div>
-        </section>
-    </main>
+                <div class="botoes">
+                    <button id="btn-copiar" class="bloqueado">Copiar</button>
+                    <button id="btn-limpar" class="bloqueado">Limpar</button>
+                </div>
+            </section>
+        </main>
 
         <footer></footer>
 		

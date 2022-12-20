@@ -1,8 +1,8 @@
 // botão -> evento click.
 document.getElementById("botaoCriptografar").addEventListener("click", function () {
 
-// texto = valor do input.
-var texto = document.getElementById("text-resultado").value;
+// texto = valor da mensagem.
+var texto = document.getElementById("mensagem").value;
 
 // Função de Mudar as letras
 function mudarLetra(texto) {
@@ -24,5 +24,5 @@ function mudarLetra(texto) {
 }
 
 // o valor de textArea = texto.
-document.getElementById("resultado").value = mudarLetra(texto);
+document.getElementById("text-resultado").value = mudarLetra(texto);
 })

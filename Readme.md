@@ -2,6 +2,11 @@
 📚 Decodificador de Texto - Alura Challenges Oracle ONE
 </h3>
 
+### 🏆 Badge Exclusiva do Desafio
+<h3 align="center">
+    <img src="image-readme/badge_Challenge01.png" alt="JAVA-SCRIPT" width="200" height="180">
+</h3>
+
 ##  🔖 Informações
 
  <p>Challenge ONE Sprint 01: Construa um decodificador de texto com Javascript

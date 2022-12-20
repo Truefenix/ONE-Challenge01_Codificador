@@ -4,7 +4,6 @@ document.getElementById("botaoCodificar").addEventListener("click", function () 
 // texto = valor da mensagem.
 var texto = document.getElementById("mensagem").value;
 
-// Função de Mudar as letras
 function mudarLetra(texto) {
     
         // se texto for com acento

@@ -9,27 +9,30 @@ body {
 
 /* Posicionamento do main*/
 main {
-    padding: 20px 0;
+    padding: 40px 0;
     display: flex;
     justify-content: center;
 }
 
 #entrada {
-    width: 65vw;
+    width: 60vw;
 }
 
 /*Caixa de texto mensagem*/
 #mensagem {
     color: #194c8a;
     width: 400px;
+    margin: 40px;
+    right: 5%;
 }
 
 textarea {
+    margin: 20px;
     font-weight: bold;
     background-color: transparent;
     resize: none;
     width: 100%;
-    padding: 20px;
+    padding: 20px 10px 60px;
     font-size: 1.2em;
     border: none;
 }
@@ -39,26 +42,64 @@ textarea:focus {
     outline: none;
 }
 
-/* Resultado (saída) */
-#resultado {
-    width: 20vw; margin-top: -12vh;
-}
-
 /* Tamanho da caixa de resultado */
-#text-resultado {
+#text-resultado{
+    font-family: 'Inter';
+    margin-top: -20%;
     height: 65vh;
-}
-
-/* Estilo da caixa de resultado */
-#text-resultado {
-    background: url(../image/pesquisa.svg);
-    background-repeat: no-repeat; /*não repetir imagem*/
-    background-position: center center; /*imagem no centro*/
-
     background-color: rgb(167, 192, 221);
-    background-size: 100%;
 
     border: 3px; /*borda*/
     border-radius: 32px;
-    transition: all 250ms ease-out;
+    padding: 30px;
+}
+
+#text-resultado::placeholder {
+    position: absolute;
+    background-image: url(../image/pesquisa.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding-top: 120%;
+    
+    color: #0A3871;
+    font-size: 16px;
+    text-align: center;
+    color: #495057;
+}
+
+/* Botões Codificar e Descodificar*/
+
+#botaoCodificar, #botaoDescodificar {
+    margin: 20px;
+    width: 20%;
+    padding: 15px 0;
+    background-color: #0A3871;
+    color: white;
+    font-family: 'Inter';
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer; 
+}
+
+#copy, #limpar {
+    margin: 20px;
+    width: 20%;
+    padding: 15px 0;
+    background-color: #0A3871;
+    color: white;
+    font-family: 'Inter';
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer; 
+}
+
+/*...............................................................*/
+  /*Abaixo o Design Responsivo da Pagina*/
+  @media screen and (max-width: 500px) {
+    
 }

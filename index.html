@@ -18,28 +18,30 @@
 		</header>
 		<main>
             <!--Caixa de Texto da mensagem-->
-            <section class="campo" id="entrada">
+            <section id="entrada">
                 <label for="mensagem"></label>
                 <textarea id="mensagem" rows="20" cols="200" placeholder="Digite seu texto" autofocus></textarea>
 
-                <div class="botoes">
-                    <button id="botaoCodificar">Criptografar</button>
-                    <button id="botaoDescodificar">Descriptografar</button>
+                <div class="botao1">
+                    <button id="botaoCodificar">Codificar</button>
+                    <button id="botaoDescodificar">Descodificar</button>
                 </div>
             </section>
 
             <!--Caixa de Texto do Resultado-->
-            <section class="campo" id="resultado">
-                <textarea id="text-resultado" readonly></textarea> <!--readonly -> é só para ler/ sem escrever nele-->
+            <section id="resultado">
+                <textarea id="text-resultado" cols="20" readonly placeholder="Digite um texto que você deseja criptografar ou descriptografar" placeholder=" "></textarea> <!--readonly -> é só para ler/ sem escrever nele-->
 
-                <div class="botoes">
+                <div class="botao2">
                     <button id="copy">Copiar</button>
                     <button id="limpar">Limpar</button>
                 </div>
             </section>
         </main>
 
-        <footer></footer>
+        <footer>
+
+        </footer>
 		
 	</body>
 </html>

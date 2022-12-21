@@ -52,11 +52,13 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
     document.getElementById("text-resultado").value = mudarLetra(texto);
 })
 
+var msgNaoEncontrada = "Nenhuma mensagem encontrada";
+
 // Função de Limpar os textos.
 document.getElementById("limpar").addEventListener("click", function () {
 
     // valor de resultado e mensagem = " "
-    var limparText = document.getElementById("text-resultado").value = " ";
+    var limparText = document.getElementById("text-resultado").value = msgNaoEncontrada;
     document.getElementById("mensagem").value = " ";
 
     alert("o texto foi Limpo: " + limparText);

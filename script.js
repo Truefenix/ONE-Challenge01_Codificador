@@ -52,7 +52,8 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
     document.getElementById("text-resultado").value = mudarLetra(texto);
 })
 
-var reset = document.getElementById("text-resultado").value
+var resetMensagem = document.getElementById("mensagem").value;
+var resetResultado = document.getElementById("text-resultado").value;
 
 var msgNaoEncontrada = "Nenhuma mensagem encontrada";
 
@@ -63,11 +64,12 @@ document.getElementById("limpar").addEventListener("click", function () {
     var limparText = document.getElementById("text-resultado").value = msgNaoEncontrada;
     document.getElementById("mensagem").value = " ";
 
-    // Função de atualizar a mensagem e 2 segundos
+    // Função de atualizar a mensagem e 3 segundos
     function atualizaTela() {
-        document.getElementById("text-resultado").value = reset;
+        document.getElementById("text-resultado").value = resetResultado;
+        document.getElementById("mensagem").value = resetMensagem;
     }
-    setInterval(atualizaTela, 2000);
+    setInterval(atualizaTela, 3000);
 })
 
 

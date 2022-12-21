@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #b9c8ff71;
+    background-color: #eef9ff;
 }
 
 /* Posicionamento do main*/
@@ -21,9 +21,18 @@ main {
 /*Caixa de texto mensagem*/
 #mensagem {
     color: #194c8a;
+
     width: 400px;
     margin: 40px;
     right: 5%;
+
+    font-family: 'inter';
+    font-size: 25px;
+}
+
+/* Cor da sugestão de mensagem */
+#mensagem::placeholder {
+    color: #194c8a;
 }
 
 textarea {
@@ -47,11 +56,14 @@ textarea:focus {
     font-family: 'Inter';
     margin-top: -20%;
     height: 65vh;
-    background-color: rgb(167, 192, 221);
+    background-color: rgb(255, 255, 255);
 
     border: 3px; /*borda*/
     border-radius: 32px;
     padding: 30px;
+
+    /*Box Shadow*/
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
 #text-resultado::placeholder {
@@ -70,18 +82,30 @@ textarea:focus {
 
 /* Botões Codificar e Descodificar*/
 
-#botaoCodificar, #botaoDescodificar {
+#botaoCodificar {
     margin: 20px;
-    width: 20%;
-    padding: 15px 0;
+    width: 30%;
+    padding: 20px 0;
     background-color: #0A3871;
     color: white;
     font-family: 'Inter';
+    font-style: normal;
     font-size: 18px;
     border: none;
-    border-radius: 5px;
-    transition: 1s all;
-    cursor: pointer; 
+    border-radius: 20px;
+}
+
+#botaoDescodificar {
+    margin: 20px;
+    width: 30%;
+    padding: 20px 0;
+    background-color: #c4dfff;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+    border-color: #0A3871;
+    border-radius: 20px;
 }
 
 #copy, #limpar {

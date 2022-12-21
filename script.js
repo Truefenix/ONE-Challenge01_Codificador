@@ -64,12 +64,12 @@ document.getElementById("limpar").addEventListener("click", function () {
     var limparText = document.getElementById("text-resultado").value = msgNaoEncontrada;
     document.getElementById("mensagem").value = " ";
 
-    // Função de atualizar a mensagem e 3 segundos
+    // Função de atualizar a mensagem em 2 segundos
     function atualizaTela() {
         document.getElementById("text-resultado").value = resetResultado;
         document.getElementById("mensagem").value = resetMensagem;
     }
-    setInterval(atualizaTela, 3000);
+    setTimeout(atualizaTela, 2000);
 })
 
 

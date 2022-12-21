@@ -52,6 +52,8 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
     document.getElementById("text-resultado").value = mudarLetra(texto);
 })
 
+var reset = document.getElementById("text-resultado").value
+
 var msgNaoEncontrada = "Nenhuma mensagem encontrada";
 
 // Função de Limpar os textos.
@@ -61,7 +63,11 @@ document.getElementById("limpar").addEventListener("click", function () {
     var limparText = document.getElementById("text-resultado").value = msgNaoEncontrada;
     document.getElementById("mensagem").value = " ";
 
-    alert("o texto foi Limpo: " + limparText);
+    // Função de atualizar a mensagem e 2 segundos
+    function atualizaTela() {
+        document.getElementById("text-resultado").value = reset;
+    }
+    setInterval(atualizaTela, 2000);
 })
 
 
@@ -74,6 +80,6 @@ document.getElementById("copy").addEventListener("click", function () {
     copyText.setSelectionRange(0, 99999);
 
     navigator.clipboard.writeText(copyText.value);
-    
+
     alert("o texto foi copiado: " + copyText.value);
 })

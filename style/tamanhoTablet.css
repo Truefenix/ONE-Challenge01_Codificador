@@ -1,18 +1,19 @@
  /* Tamanho Tablet */
- @media (min-width: 770px) and (max-width: 1000px) {
+ @media (min-width: 771px) and (max-width: 1030px) {
 
     body {
-        background-color: rgb(58, 137, 211);
+        background-color: #eef9ff;
     }
     /* Posicionamento do main*/
     main {
-        padding: 40px 0;
+        padding: 10px 0;
         display: flex;
         justify-content: center;
     }
     
     #entrada {
-        width: 60vw;
+        width: 85vw;
+        height: 20;
     }
     
     /* Aviso */
@@ -37,13 +38,14 @@
     /*Caixa de texto mensagem*/
     #mensagem {
         color: #194c8a;
-    
+        background-color: transparent;
+
         width: 400px;
-        margin: 40px;
+        margin: 20px 0 2% 0;
         padding-right: 20%;
     
         font-family: 'inter';
-        font-size: 25px;
+        font-size: 30px;
     }
     
     /* Cor da sugestão de mensagem */
@@ -67,10 +69,10 @@
     }
     
     .caixa-resultado {
-        padding: 0 3.2% 5% 0;
-        height: 65vh;
-        background-color: rgb(219, 234, 255);
-        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        padding: 0;
+        height: 0;
+        background-color: transparent;
+        box-shadow: none;
     }
     
     /* Tamanho da caixa de resultado */
@@ -79,14 +81,14 @@
         background-position: center;
         background-repeat: no-repeat;
     
-        padding: 70% 50%;
+        padding: 5% 25%;
     }
     
     /* Botões Codificar e Descodificar*/
     
     #botaoCodificar {
         margin: 20px;
-        width: 30%;
+        width: 40%;
         padding: 20px 0;
         background-color: #0A3871;
         color: white;
@@ -106,7 +108,7 @@
     
     #botaoDescodificar {
         margin: 20px;
-        width: 30%;
+        width: 40%;
         padding: 20px 0;
         background-color: #c4dfff;
         color: #0A3871;
@@ -125,12 +127,18 @@
     
     /* Botão de Copiar e Colar */
     #text-resultado {
-        margin-top: -20%;
-        height: 65vh;
-        background-color: rgb(255, 255, 255);
+        position: absolute;
+        top: 113%;
+        left: 5%;
+        margin-right: 25px;
+
+        width: 85vh;
+        height: 20vh;
+
+        background-color: white;
     
         /* borda */
-        border-radius: 32px;
+        border-radius: 15px;
         padding: 30px;
     
         /* texto */
@@ -142,14 +150,23 @@
         box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     }
     #botao2 {
+        background-color: transparent;
+
+        position: absolute;
+        top: 120%;
+        left: 25%;
+
+        width: 50vh;
+        height: 10vh;
+
         text-align: center;
-        margin-right: -85px;
+        margin-right: 25px;
     }
     
     #copy, #limpar {
         margin: 15px 30px;
         width: 30%;
-        padding: 10px 0;
+        padding: 15px 0;
         background-color: transparent;
         color: #0A3871;
         font-family: 'Inter';
@@ -166,12 +183,16 @@
         transform: scale(1.2);
     }
     #text-box {
+        background-color: transparent;
         position: absolute;
-        top: 62%;
-        left: 73%;
+        top: 95%;
+        left: 25%;
+        margin-top: 1%;
+        margin-right: 25px;
+
         text-align: center;
-        width: 15%;
-        height: 120px;
+        width: 40%;
+        height: 15%;
     }
     #text-box h2 {
         font-family: 'Inter';

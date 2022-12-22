@@ -2,7 +2,206 @@
  @media (max-width: 770px) {
 
     body {
-        background-color: yellow;
+        background-color: rgb(207, 122, 24);
+    }
+    /* Posicionamento do main*/
+    main {
+        padding: 40px 0;
+        display: flex;
+        justify-content: center;
     }
     
+    #entrada {
+        width: 60vw;
+    }
+    
+    /* Aviso */
+    .aviso {
+        text-align: center;
+        margin-bottom: 1%;
+    }
+    .aviso img {
+        position: absolute;
+        left: 10.5%;
+        float: left;
+        
+    }
+    .aviso p{
+        position: absolute;
+        left: 9%;
+        margin-left: 3%;
+        vertical-align: top;
+        text-align: center 0;
+    }
+    
+    /*Caixa de texto mensagem*/
+    #mensagem {
+        color: #194c8a;
+        background-color: #df5505;
+
+        width: 400px;
+        margin: 20px 0;
+        padding-right: 20%;
+    
+        font-family: 'inter';
+        font-size: 25px;
+    }
+    
+    /* Cor da sugestão de mensagem */
+    #mensagem::placeholder {
+        color: #194c8a;
+    }
+    
+    textarea {
+        font-weight: bold;
+        background-color: transparent;
+        resize: none;
+        width: 100%;
+        padding: 20px 10px 60px;
+        font-size: 1.2em;
+        border: none;
+    }
+    
+    /* Retira a linha da borda do textArea */
+    textarea:focus {
+        outline: none;
+    }
+    
+    .caixa-resultado {
+        padding: 0;
+        height: 0;
+        background-color: transparent;
+        box-shadow: none;
+    }
+    
+    /* Tamanho da caixa de resultado */
+    #text-resultado::placeholder {
+        background-image: none;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+        padding: 5% 25%;
+    }
+    
+    /* Botões Codificar e Descodificar*/
+    
+    #botaoCodificar {
+        margin: 20px;
+        width: 30%;
+        padding: 20px 0;
+        background-color: #0A3871;
+        color: white;
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 18px;
+        border-color: transparent;
+        border-radius: 20px;
+        transition: .2s background;
+    }
+    #botaoCodificar:hover{
+        background-color: white;
+        color: #0A3871;
+        transform: scale(1.2);
+        border-color: #0A3871;
+    }
+    
+    #botaoDescodificar {
+        margin: 20px;
+        width: 30%;
+        padding: 20px 0;
+        background-color: #c4dfff;
+        color: #0A3871;
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 18px;
+        border-color: #0A3871;
+        border-radius: 20px;
+        transition: .2s background;
+    }
+    #botaoDescodificar:hover {
+        background-color: #0A3871;
+        color: white;
+        transform: scale(1.2);
+    }
+    
+    /* Botão de Copiar e Colar */
+    #text-resultado {
+        position: absolute;
+        top: 113%;
+        left: 5%;
+        margin-right: 25px;
+
+        width: 100vh;
+        height: 20vh;
+
+        background-color: #d1df05;
+    
+        /* borda */
+        border-radius: 15px;
+        padding: 30px;
+    
+        /* texto */
+        color: #df5505;
+        font-family: 'inter';
+        font-size: 20px;
+    
+        /*Box Shadow*/
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    }
+    #botao2 {
+        background-color: aqua;
+
+        position: absolute;
+        top: 122%;
+        left: 25%;
+
+        width: 50vh;
+        height: 10vh;
+
+        text-align: center;
+        margin-right: 25px;
+    }
+    
+    #copy, #limpar {
+        margin: 15px 30px;
+        width: 30%;
+        padding: 15px 0;
+        background-color: transparent;
+        color: #0A3871;
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 12px;
+        border-color: #0A3871;
+        border-radius: 20px;
+        transition: .2s background;
+    }
+    
+    #copy:hover, #limpar:hover{
+        background-color: #0A3871;
+        color: #c4dfff;
+        transform: scale(1.2);
+    }
+    #text-box {
+        background-color: aqua;
+        position: absolute;
+        top: 95%;
+        left: 25%;
+        margin-top: 1%;
+        margin-right: 25px;
+
+        text-align: center;
+        width: 40%;
+        height: 15%;
+    }
+    #text-box h2 {
+        font-family: 'Inter';
+        font-style: normal;
+        font-size: 20px;
+        line-height: 120%;
+    }
+    #text-box p {
+        font-style: normal;
+        font-size: 16px;
+        line-height: 150%;
+    }
  }

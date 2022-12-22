@@ -1,9 +1,12 @@
 document.getElementById("botao2").style.display = "none"; // deixa invísivel os botão copiar e limpar
+document.getElementById("text-box").style.display = "inline"; // deixa invísivel o texto
 
 // Função de Codificar as Letras
 document.getElementById("botaoCodificar").addEventListener("click", function () {
 
-    document.getElementById("botao2").style.display = "inline"; // deixa visível os botão copiar e limpar
+    // visíbilidade
+    document.getElementById("botao2").style.display = "inline";
+    document.getElementById("text-box").style.display = "none";
 
 // texto = valor da mensagem.
 var texto = document.getElementById("mensagem").value;
@@ -33,7 +36,9 @@ function mudarLetra(texto) {
 // Função de Desciptografar
 document.getElementById("botaoDescodificar").addEventListener("click", function () {
 
-    document.getElementById("botao2").style.display = "inline"; // deixa visível os botão copiar e limpar
+    // visíbilidade
+    document.getElementById("botao2").style.display = "inline";
+    document.getElementById("text-box").style.display = "none";
 
     var texto = document.getElementById("mensagem").value;
     
@@ -61,18 +66,20 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
 var resetMensagem = document.getElementById("mensagem").value;
 var resetResultado = document.getElementById("text-resultado").value;
 
-var msgNaoEncontrada = "Nenhuma mensagem encontrada";
-
 // Função de Limpar os textos.
 document.getElementById("limpar").addEventListener("click", function () {
 
     // valor de resultado e mensagem = " "
-    var limparText = document.getElementById("text-resultado").value = msgNaoEncontrada;
+    var limparText = document.getElementById("text-resultado").value = "Nenhuma mensagem encontrada";
+    
     document.getElementById("mensagem").value = " ";
 
     // Função de atualizar a mensagem em 2 segundos
     function atualizaTela() {
-        document.getElementById("botao2").style.display = "none"; // deixa invísivel os botão copiar e limpar
+        // deixa visível
+        document.getElementById("botao2").style.display = "inline";
+        document.getElementById("text-box").style.display = "inline";
+
         document.getElementById("text-resultado").value = resetResultado;
         document.getElementById("mensagem").value = resetMensagem;
     }

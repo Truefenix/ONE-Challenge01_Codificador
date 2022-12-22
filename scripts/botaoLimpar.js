@@ -21,5 +21,5 @@ document.getElementById("limpar").addEventListener("click", function () {
         document.getElementById("text-resultado").value = resetResultado;
         document.getElementById("mensagem").value = resetMensagem;
     }
-    setTimeout(atualizaTela, 2000); // atualiza 1 vez só
+    setTimeout(atualizaTela, 500); // atualiza 1 vez só
 })

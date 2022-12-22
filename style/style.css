@@ -73,7 +73,6 @@ textarea:focus {
     padding: 0 3.2% 5% 0;
     height: 65vh;
     background-color: rgb(219, 234, 255);
-    border-radius: 32px;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 }
 
@@ -188,5 +187,3 @@ textarea:focus {
     font-size: 16px;
     line-height: 150%;
 }
-/*...............................................................*/
-  /*Abaixo o Design Responsivo da Pagina*/

@@ -1,0 +1,8 @@
+ /* Tamanho Celular */
+ @media (max-width: 770px) {
+
+    body {
+        background-color: yellow;
+    }
+    
+ }

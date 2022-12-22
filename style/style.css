@@ -18,6 +18,25 @@ main {
     width: 60vw;
 }
 
+/* Aviso */
+.aviso {
+    text-align: center;
+    margin-bottom: 1%;
+}
+.aviso img {
+    position: absolute;
+    left: 10.5%;
+    float: left;
+    
+}
+.aviso p{
+    position: absolute;
+    left: 9%;
+    margin-left: 3%;
+    vertical-align: top;
+    text-align: center 0;
+}
+
 /*Caixa de texto mensagem*/
 #mensagem {
     color: #194c8a;

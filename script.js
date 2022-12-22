@@ -5,7 +5,7 @@ document.getElementById("text-box").style.display = "inline"; // deixa invísive
 document.getElementById("botaoCodificar").addEventListener("click", function () {
 
     // visíbilidade
-    document.getElementById("botao2").style.display = "inline";
+    document.getElementById("botao2").style.display = "block";
     document.getElementById("text-box").style.display = "none";
 
 // texto = valor da mensagem.
@@ -37,7 +37,7 @@ function mudarLetra(texto) {
 document.getElementById("botaoDescodificar").addEventListener("click", function () {
 
     // visíbilidade
-    document.getElementById("botao2").style.display = "inline";
+    document.getElementById("botao2").style.display = "block";
     document.getElementById("text-box").style.display = "none";
 
     var texto = document.getElementById("mensagem").value;
@@ -77,7 +77,7 @@ document.getElementById("limpar").addEventListener("click", function () {
     // Função de atualizar a mensagem em 2 segundos
     function atualizaTela() {
         // deixa visível
-        document.getElementById("botao2").style.display = "inline";
+        document.getElementById("botao2").style.display = "block";
         document.getElementById("text-box").style.display = "inline";
 
         document.getElementById("text-resultado").value = resetResultado;

@@ -72,12 +72,12 @@ document.getElementById("limpar").addEventListener("click", function () {
 
     // Função de atualizar a mensagem em 2 segundos
     function atualizaTela() {
+        document.getElementById("botao2").style.display = "none"; // deixa invísivel os botão copiar e limpar
         document.getElementById("text-resultado").value = resetResultado;
         document.getElementById("mensagem").value = resetMensagem;
     }
     setTimeout(atualizaTela, 2000); // atualiza 1 vez só
 })
-
 
 // Função de Copiar o Texto da caixa de resultado
 document.getElementById("copy").addEventListener("click", function () {

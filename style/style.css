@@ -60,17 +60,11 @@ textarea:focus {
 
 /* Tamanho da caixa de resultado */
 #text-resultado::placeholder {
-    position: absolute;
     background-image: url(../image/pesquisa.svg);
     background-position: center;
     background-repeat: no-repeat;
 
-    padding-top: 100%;
-    
-    color: #0A3871;
-    font-size: 16px;
-    text-align: center;
-    color: #495057;
+    padding: 70% 50%;
 }
 
 /* Botões Codificar e Descodificar*/
@@ -155,6 +149,25 @@ textarea:focus {
     background-color: #0A3871;
     color: #c4dfff;
     transform: scale(1.2);
+}
+.text-box {
+    position: absolute;
+    top: 62%;
+    left: 73%;
+    text-align: center;
+    width: 15%;
+    height: 120px;
+}
+.text-box h2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 120%;
+}
+.text-box p {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 150%;
 }
 /*...............................................................*/
   /*Abaixo o Design Responsivo da Pagina*/

@@ -77,7 +77,7 @@ document.getElementById("limpar").addEventListener("click", function () {
     // Função de atualizar a mensagem em 2 segundos
     function atualizaTela() {
         // deixa visível
-        document.getElementById("botao2").style.display = "block";
+        document.getElementById("botao2").style.display = "none";
         document.getElementById("text-box").style.display = "inline";
 
         document.getElementById("text-resultado").value = resetResultado;

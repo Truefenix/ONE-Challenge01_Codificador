@@ -1,5 +1,9 @@
+document.getElementById("botao2").style.display = "none"; // deixa invísivel os botão copiar e limpar
+
 // Função de Codificar as Letras
 document.getElementById("botaoCodificar").addEventListener("click", function () {
+
+    document.getElementById("botao2").style.display = "inline"; // deixa visível os botão copiar e limpar
 
 // texto = valor da mensagem.
 var texto = document.getElementById("mensagem").value;
@@ -28,6 +32,8 @@ function mudarLetra(texto) {
 
 // Função de Desciptografar
 document.getElementById("botaoDescodificar").addEventListener("click", function () {
+
+    document.getElementById("botao2").style.display = "inline"; // deixa visível os botão copiar e limpar
 
     var texto = document.getElementById("mensagem").value;
     
@@ -69,7 +75,7 @@ document.getElementById("limpar").addEventListener("click", function () {
         document.getElementById("text-resultado").value = resetResultado;
         document.getElementById("mensagem").value = resetMensagem;
     }
-    setTimeout(atualizaTela, 2000);
+    setTimeout(atualizaTela, 2000); // atualiza 1 vez só
 })
 
 

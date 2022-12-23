@@ -1,0 +1,101 @@
+/* BOTÕES */
+
+#botaoCodificar {
+    margin: 20px;
+    width: 200px;
+    padding: 20px 0;
+
+    background-color: #0A3871;
+    color: white;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+    border-color: transparent;
+    border-radius: 20px;
+    transition: .2s background;
+}
+
+#botaoCodificar:hover{
+    background-color: white;
+    color: #0A3871;
+    transform: scale(1);
+    border-color: #0A3871;
+}
+
+#botaoDescodificar {
+    margin: 20px;
+    width: 200px;
+    padding: 20px 0;
+    
+    background-color: #c4dfff;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+    border-color: #0A3871;
+    border-radius: 20px;
+    transition: .2s background;
+}
+
+#botaoDescodificar:hover {
+    background-color: #0A3871;
+    color: white;
+    transform: scale(1);
+}
+
+/* Btoão Copiar e Limpar */
+#copy {
+    margin-left: 10%;
+    width: 150px;
+    padding: 20px 0;
+
+    background-color: #c4dfff;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+    border-color: #0A3871;
+    border-radius: 20px;
+    transition: .2s background;
+}
+
+#copy:hover {
+    background-color: #0A3871;
+    color: white;
+    transform: scale(1);
+}
+
+#limpar {
+    margin-left: 3%;
+    width: 150px;
+    padding: 20px 0;
+
+    background-color: #c4dfff;
+    color: #0A3871;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 18px;
+    border-color: #0A3871;
+    border-radius: 20px;
+    transition: .2s background;
+}
+
+#limpar:hover {
+    background-color: #0A3871;
+    color: white;
+    transform: scale(1);
+}
+
+.botao1 {
+    background-color: blue;
+    position: relative;
+}
+
+#botao2 {
+    background-color: rgb(255, 102, 0);
+}
+
+/* Tamanho Tablet */
+@media (min-width: 771px) and (max-width: 1030px) {
+
+}

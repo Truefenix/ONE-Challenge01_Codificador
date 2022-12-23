@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
+    <head>
 		<meta charset="UTF-8">
 		<title>Decodificador de Texto - Alura Challenges Oracle ONE</title>
         <meta name="Eduardo-Roque" content="Alura">
@@ -8,52 +8,40 @@
         <meta name="keyworlds" content="HTML5, CSS, JS">
         <link rel="stylesheet" href="style/reset.css">
 		<link rel="stylesheet" href="style/style.css">
-        <link rel="stylesheet" href="style/tamanhoTablet.css">
-        <link rel="stylesheet" href="style/tamanhoCelular.css">
+        <link rel="stylesheet" href="style/caixaDeMensagem.css">
+        <link rel="stylesheet" href="style/botoes.css">
 	</head>
-
-	<body>
-		<header>
-            <div class="cabeçalho" id="entrada">
-                <h1><img id="banner" src="image/logo-Alura.png" alt="logo-Alura"></h1>
+    <body>
+        <header>
+            <div class="banner">
+                <h1><img src="image/logo-Alura.png"></h1>
             </div>
-		</header>
-		<main>
-            <!--Caixa de Texto da mensagem-->
-            <section id="entrada">
-                <label for="mensagem"></label>
-                <textarea id="mensagem" rows="10" cols="150" placeholder="Digite seu texto" autofocus></textarea>
+        </header>
 
-                <div class="aviso">
-                    <img src="image/exclamação.png" alt="Aviso"><p>Apenas letras minúsculas e sem acento.</p>
-                </div>
-                    
-                <div>
+        <main class="caixa">
+            <section class="box-mensagem">
+                <textarea id="mensagem" rows="22" cols="12" placeholder="Digite seu texto" autofocus></textarea>
+
+                <div class="botao1">
                     <button id="botaoCodificar">Criptografar</button>
                     <button id="botaoDescodificar">Descriptografar</button></label>
                 </div>
             </section>
-            <!--Caixa de Texto do Resultado-->
-            <div class="caixa-resultado">
-                <section id="resultado">
-                    <textarea id="text-resultado" cols="20" readonly placeholder=" "></textarea> <!--readonly -> é só para ler/ sem escrever nele-->
-                </section>
+                    
+            <section class="box-resultado">
+                <textarea id="text-resultado" rows="25" cols="8" readonly placeholder=" "></textarea><!--readonly é só para ler/ sem escrever nele-->
+
                 <div id="botao2">
                     <button id="copy">Copiar</button>
                     <button id="limpar">Limpar</button>
                 </div>
-            </div>
-            <div id="text-box">
-                <h2>Nenhuma mensagem encontrada</h2>
-                <p>Digite um texto que você deseja criptografar ou descriptografar</p>
-            </div>
+            </section>
+
         </main>
-
         <footer>
-
+            <p id="Copyright">&copy; Copyright Eduardo-Roque - ALURA - 2022</p>
         </footer>
-		
-	</body>
+    </body>
 </html>
 <script src="scripts/codificar.js"></script>
 <script src="scripts/descodificar.js"></script>

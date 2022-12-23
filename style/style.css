@@ -1,189 +1,33 @@
-#banner {
-    margin-top: 5%;
-    margin-left: 10%;
+header {
+    background: #F5EDDC;
+    padding: 20px 0;
 }
 
-body {
-    background-color: #eef9ff;
+.banner {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
 }
 
-/* Posicionamento do main*/
+/* CORPO PRINCIPAL */
 main {
+    background-color: #23917e;
+}
+
+/*Final da Página*/
+footer {
+    text-align: center;
+    background: url("../image/bg.jpg");
     padding: 40px 0;
-    display: flex;
-    justify-content: center;
 }
 
-#entrada {
-    width: 60vw;
+#Copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px 0 0;
 }
 
-/* Aviso */
-.aviso {
-    text-align: center;
-    margin-bottom: 1%;
-}
-.aviso img {
-    position: absolute;
-    left: 10.5%;
-    float: left;
-    
-}
-.aviso p{
-    position: absolute;
-    left: 9%;
-    margin-left: 3%;
-    vertical-align: top;
-    text-align: center 0;
-}
+/* Tamanho Tablet */
+@media (min-width: 771px) and (max-width: 1030px) {
 
-/*Caixa de texto mensagem*/
-#mensagem {
-    color: #194c8a;
-
-    width: 400px;
-    margin: 40px;
-    padding-right: 20%;
-
-    font-family: 'inter';
-    font-size: 25px;
-}
-
-/* Cor da sugestão de mensagem */
-#mensagem::placeholder {
-    color: #194c8a;
-}
-
-textarea {
-    font-weight: bold;
-    background-color: transparent;
-    resize: none;
-    width: 100%;
-    padding: 20px 10px 60px;
-    font-size: 1.2em;
-    border: none;
-}
-
-/* Retira a linha da borda do textArea */
-textarea:focus {
-    outline: none;
-}
-
-.caixa-resultado {
-    padding: 0 3.2% 5% 0;
-    height: 65vh;
-    background-color: rgb(219, 234, 255);
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-}
-
-/* Tamanho da caixa de resultado */
-#text-resultado::placeholder {
-    background-image: url(../image/pesquisa.svg);
-    background-position: center;
-    background-repeat: no-repeat;
-
-    padding: 70% 50%;
-}
-
-/* Botões Codificar e Descodificar*/
-
-#botaoCodificar {
-    margin: 20px;
-    width: 30%;
-    padding: 20px 0;
-    background-color: #0A3871;
-    color: white;
-    font-family: 'Inter';
-    font-style: normal;
-    font-size: 18px;
-    border-color: transparent;
-    border-radius: 20px;
-    transition: .2s background;
-}
-#botaoCodificar:hover{
-    background-color: white;
-    color: #0A3871;
-    transform: scale(1.2);
-    border-color: #0A3871;
-}
-
-#botaoDescodificar {
-    margin: 20px;
-    width: 30%;
-    padding: 20px 0;
-    background-color: #c4dfff;
-    color: #0A3871;
-    font-family: 'Inter';
-    font-style: normal;
-    font-size: 18px;
-    border-color: #0A3871;
-    border-radius: 20px;
-    transition: .2s background;
-}
-#botaoDescodificar:hover {
-    background-color: #0A3871;
-    color: white;
-    transform: scale(1.2);
-}
-
-/* Botão de Copiar e Colar */
-#text-resultado {
-    margin-top: -20%;
-    height: 65vh;
-    background-color: rgb(255, 255, 255);
-
-    /* borda */
-    border-radius: 32px;
-    padding: 30px;
-
-    /* texto */
-    color: #df5505;
-    font-family: 'inter';
-    font-size: 20px;
-
-    /*Box Shadow*/
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-}
-#botao2 {
-    text-align: center;
-    margin-right: -85px;
-}
-
-#copy, #limpar {
-    margin: 15px 30px;
-    width: 30%;
-    padding: 10px 0;
-    background-color: transparent;
-    color: #0A3871;
-    font-family: 'Inter';
-    font-style: normal;
-    font-size: 12px;
-    border-color: #0A3871;
-    border-radius: 20px;
-    transition: .2s background;
-}
-
-#copy:hover, #limpar:hover{
-    background-color: #0A3871;
-    color: #c4dfff;
-    transform: scale(1.2);
-}
-#text-box {
-    position: absolute;
-    top: 62%;
-    left: 73%;
-    text-align: center;
-    width: 15%;
-    height: 120px;
-}
-#text-box h2 {
-    font-family: 'Inter';
-    font-style: normal;
-    font-size: 20px;
-    line-height: 120%;
-}
-#text-box p {
-    font-style: normal;
-    font-size: 16px;
-    line-height: 150%;
 }

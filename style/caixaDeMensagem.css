@@ -1,0 +1,78 @@
+.caixa textarea {
+    display: inline-block;
+
+    border-width: 2px;
+    border-radius: 5%;
+}
+
+.box-mensagem {
+    vertical-align: top;
+    background-color: yellow;
+    display: inline-block;
+
+    padding-right: 15%;
+
+    border-width: 2px;
+    border-radius: 5%;
+
+    margin-left: 5%;
+}
+
+.box-resultado {
+    background-color: rgb(225, 0, 255);
+    display: inline-block;
+
+    width: 25%;
+
+    border-width: 2px;
+    border-radius: 5%;
+
+    margin-left: 5%;
+}
+
+/* Retira a linha da borda do textArea */
+textarea:focus {
+    outline: none;
+}
+
+#mensagem {
+    font-family: 'Inter';
+    font-size: 20px;
+    color: #0A3871;
+
+    background-color: #860a0a;
+    width: 100%;
+
+    margin: 0 0 0 0;
+}
+#mensagem::placeholder {
+    color: #194c8a;
+}
+
+#text-resultado {
+    background-color: rgb(255, 255, 255);
+
+    width: 100%;
+
+    border-radius: 32px;
+
+    color: #df5505;
+    font-family: 'inter';
+    font-size: 20px;
+
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+
+#text-resultado::placeholder {
+    background-image: url(../image/pesquisa.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 85%;
+
+    padding: 60% 0;
+}
+
+/* Tamanho Tablet */
+@media (min-width: 771px) and (max-width: 1030px) {
+    
+}

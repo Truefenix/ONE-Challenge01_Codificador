@@ -6,53 +6,57 @@
 }
 
 .box-mensagem {
+
     vertical-align: top;
-    background-color: yellow;
+    background-color: transparent;
     display: inline-block;
 
     padding-right: 15%;
 
-    border-width: 2px;
     border-radius: 5%;
 
     margin-left: 5%;
+    margin-top: 2%;
 }
 
 .box-resultado {
-    background-color: rgb(225, 0, 255);
     display: inline-block;
 
-    width: 25%;
+    width: 28%;
 
     border-width: 2px;
     border-radius: 5%;
 
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 /* Retira a linha da borda do textArea */
 textarea:focus {
     outline: none;
+    color: transparent;
 }
 
 #mensagem {
     font-family: 'Inter';
-    font-size: 20px;
+    font-size: 25px;
     color: #0A3871;
 
-    background-color: #860a0a;
-    width: 100%;
+    background-color: transparent;
+    width: 150%;
 
-    margin: 0 0 0 0;
+    padding-top: 3%;
+    border: none; /*Retira o risco da borda*/
 }
 #mensagem::placeholder {
     color: #194c8a;
 }
 
 #text-resultado {
+    margin-left: 3%;
     background-color: rgb(255, 255, 255);
 
-    width: 100%;
+    width: 90%;
+    height: 80vh;
 
     border-radius: 32px;
 
@@ -61,6 +65,7 @@ textarea:focus {
     font-size: 20px;
 
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border: none; /*Retira o risco da borda*/
 }
 
 #text-resultado::placeholder {
@@ -73,6 +78,104 @@ textarea:focus {
 }
 
 /* Tamanho Tablet */
-@media (min-width: 771px) and (max-width: 1030px) {
+@media (min-width: 771px) and (max-width: 1039px) {
     
+    /*Caixa Resultado*/
+    .box-resultado {
+        width: 90%;
+    
+        margin-left: 5%;
+        margin-bottom: 3%;
+    }
+    #text-resultado {
+        background-color: white;
+    
+        width: 90%;
+        height: 20vh;
+    
+        color: transparent;
+        font-family: 'inter';
+        font-size: 20px;
+    }
+    
+    #text-resultado::placeholder {
+        background-image: none;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 85%;
+    
+        padding: 60% 0;
+    }
+
+    /* Caixa de Mensagem*/
+    .box-mensagem {
+        display: inline-block;
+
+        vertical-align: top;
+        display: inline-block;
+    
+        padding-right: 50%;
+    
+        border-width: 2px;
+        border-radius: 5%;
+    
+        margin-left: 5%;
+    }
+    #mensagem {
+        font-family: 'Inter';
+        font-size: 30px;
+        color: #0A3871;
+    
+        background-color: transparent;
+        width: 200%;
+    }
+}
+
+/* Tamanho Celular */
+@media (max-width: 771px) {
+
+    /*Caixa Resultado*/
+    .box-resultado {
+        width: 90%;
+    
+        margin-left: 5%;
+    }
+    #text-resultado {
+        background-color: white;
+    
+        width: 90%;
+        height: 20vh;
+    
+        color: #df5505;
+        font-family: 'inter';
+        font-size: 20px;
+    }
+    
+    #text-resultado::placeholder {
+        background-image: none;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 85%;
+    
+        padding: 60% 0;
+    }
+
+    /* Caixa de Mensagem*/
+    .box-mensagem {
+        display: inline-block;
+
+        vertical-align: top;
+    
+        border-width: 2px;
+        border-radius: 5%;
+    
+        width: 90%;
+        padding-right: 0;
+    }
+    #mensagem {
+        font-size: 25px;
+    
+        background-color: transparent;
+        width: 100%;
+    }
 }

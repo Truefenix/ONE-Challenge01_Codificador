@@ -1,9 +1,10 @@
 /* BOTÕES */
 
 #botaoCodificar {
-    margin: 20px;
+    margin-left: 12%;
     width: 200px;
     padding: 20px 0;
+    margin-top: 2%;
 
     background-color: #0A3871;
     color: white;
@@ -18,14 +19,15 @@
 #botaoCodificar:hover{
     background-color: white;
     color: #0A3871;
-    transform: scale(1);
+    transform: scale(1.2);
     border-color: #0A3871;
 }
 
 #botaoDescodificar {
-    margin: 20px;
+    margin-left: 5%;
     width: 200px;
     padding: 20px 0;
+    margin-top: 2%;
     
     background-color: #c4dfff;
     color: #0A3871;
@@ -40,13 +42,13 @@
 #botaoDescodificar:hover {
     background-color: #0A3871;
     color: white;
-    transform: scale(1);
+    transform: scale(1.2);
 }
 
 /* Btoão Copiar e Limpar */
 #copy {
-    margin-left: 10%;
-    width: 150px;
+    margin-left: 15%;
+    width: 130px;
     padding: 20px 0;
 
     background-color: #c4dfff;
@@ -67,7 +69,7 @@
 
 #limpar {
     margin-left: 3%;
-    width: 150px;
+    width: 130px;
     padding: 20px 0;
 
     background-color: #c4dfff;
@@ -87,15 +89,79 @@
 }
 
 .botao1 {
-    background-color: blue;
-    position: relative;
-}
-
-#botao2 {
-    background-color: rgb(255, 102, 0);
+    width: 150%;
+    margin: 12% 0;
+    height: 10vh;
 }
 
 /* Tamanho Tablet */
-@media (min-width: 771px) and (max-width: 1030px) {
+@media (min-width: 771px) and (max-width: 1039px) {
 
+    /*Botão de Copiar e Colar*/
+    #copy {
+        margin-left: 20%;
+        width: 25%;
+        padding: 20px 0;
+    }
+    
+    #limpar {
+        margin-left: 3%;
+        width: 25%;
+        padding: 20px 0;
+    }
+
+    /* Botão de Codificar e Descodificar */
+    .botao1 {
+        width: 200%;
+        height: 10vh;
+        margin: 5% 0 5%;
+    }
+    #botaoCodificar {
+        margin-left: 5%;
+        width: 300px;
+        padding: 20px 0;
+    }
+    
+    #botaoDescodificar {
+        margin-left: 5%;
+        width: 300px;
+        padding: 20px 0;
+    }
+}
+
+/* Tamanho Celular */
+@media (max-width: 771px) {
+
+    /*Botão de Copiar e Colar*/
+    #copy {
+        margin-left: 20%;
+        width: 25%;
+        padding: 20px 0;
+    }
+    
+    #limpar {
+        margin-left: 3%;
+        width: 25%;
+        padding: 20px 0;
+    }
+
+    /* Botão de Codificar e Descodificar */
+    .botao1 {
+        display: block;
+        width: 100%;
+        height: 20vh;
+        margin: 0;
+        margin-bottom: 2%;
+    }
+    #botaoCodificar {
+        margin-left: 10%;
+        width: 80%;
+        padding: 20px 0;
+    }
+    
+    #botaoDescodificar {
+        margin-left: 10%;
+        width: 80%;
+        padding: 20px 0;
+    }
 }

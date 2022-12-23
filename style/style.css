@@ -1,5 +1,5 @@
 header {
-    background: #F5EDDC;
+    background: #E5E5E5;
     padding: 20px 0;
 }
 
@@ -11,7 +11,7 @@ header {
 
 /* CORPO PRINCIPAL */
 main {
-    background-color: #23917e;
+    background-color: #E5E5E5;
 }
 
 /*Final da Página*/
@@ -28,6 +28,10 @@ footer {
 }
 
 /* Tamanho Tablet */
-@media (min-width: 771px) and (max-width: 1030px) {
+@media (min-width: 771px) and (max-width: 1039px) {
+
+}
+/* Tamanho Celular */
+@media (max-width: 771px) {
 
 }

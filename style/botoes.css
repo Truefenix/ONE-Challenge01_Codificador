@@ -95,7 +95,7 @@
 }
 
 /* Tamanho Tablet */
-@media (min-width: 771px) and (max-width: 1039px) {
+@media all and (max-width: 1039px) {
 
     /*Botão de Copiar e Colar*/
     #copy {
@@ -112,46 +112,10 @@
 
     /* Botão de Codificar e Descodificar */
     .botao1 {
-        width: 200%;
-        height: 10vh;
-        margin: 5% 0 5%;
-    }
-    #botaoCodificar {
-        margin-left: 5%;
-        width: 300px;
-        padding: 20px 0;
-    }
-    
-    #botaoDescodificar {
-        margin-left: 5%;
-        width: 300px;
-        padding: 20px 0;
-    }
-}
-
-/* Tamanho Celular */
-@media (max-width: 771px) {
-
-    /*Botão de Copiar e Colar*/
-    #copy {
-        margin-left: 20%;
-        width: 25%;
-        padding: 20px 0;
-    }
-    
-    #limpar {
-        margin-left: 3%;
-        width: 25%;
-        padding: 20px 0;
-    }
-
-    /* Botão de Codificar e Descodificar */
-    .botao1 {
-        display: block;
+        display: inline-block;
         width: 100%;
-        height: 20vh;
-        margin: 0;
-        margin-bottom: 2%;
+        margin-bottom: 8%;
+        height: 10%;
     }
     #botaoCodificar {
         margin-left: 10%;

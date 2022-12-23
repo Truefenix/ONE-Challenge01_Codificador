@@ -26,12 +26,3 @@ footer {
     font-size: 13px;
     margin: 20px 0 0;
 }
-
-/* Tamanho Tablet */
-@media (min-width: 771px) and (max-width: 1039px) {
-
-}
-/* Tamanho Celular */
-@media (max-width: 771px) {
-
-}

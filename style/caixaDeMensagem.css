@@ -76,75 +76,27 @@ textarea:focus {
 
     padding: 60% 0;
 }
-
 /* Tamanho Tablet */
-@media (min-width: 771px) and (max-width: 1039px) {
+@media all and (max-width: 1039px) {
     
     /*Caixa Resultado*/
     .box-resultado {
         width: 90%;
+
+        height: 5%;
+
+        margin: 0;
     
         margin-left: 5%;
-        margin-bottom: 3%;
+        margin-bottom: 2%;
     }
     #text-resultado {
-        background-color: white;
+        background-color: rgb(255, 255, 255);
     
         width: 90%;
-        height: 20vh;
-    
-        color: transparent;
-        font-family: 'inter';
-        font-size: 20px;
-    }
-    
-    #text-resultado::placeholder {
-        background-image: none;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 85%;
-    
-        padding: 60% 0;
-    }
+        height: 5%;
 
-    /* Caixa de Mensagem*/
-    .box-mensagem {
-        display: inline-block;
-
-        vertical-align: top;
-        display: inline-block;
-    
-        padding-right: 50%;
-    
-        border-width: 2px;
-        border-radius: 5%;
-    
-        margin-left: 5%;
-    }
-    #mensagem {
-        font-family: 'Inter';
-        font-size: 30px;
-        color: #0A3871;
-    
-        background-color: transparent;
-        width: 200%;
-    }
-}
-
-/* Tamanho Celular */
-@media (max-width: 771px) {
-
-    /*Caixa Resultado*/
-    .box-resultado {
-        width: 90%;
-    
-        margin-left: 5%;
-    }
-    #text-resultado {
-        background-color: white;
-    
-        width: 90%;
-        height: 20vh;
+        padding: 0;
     
         color: #df5505;
         font-family: 'inter';
@@ -157,11 +109,15 @@ textarea:focus {
         background-repeat: no-repeat;
         background-size: 85%;
     
-        padding: 60% 0;
+        padding: 0;
     }
 
     /* Caixa de Mensagem*/
     .box-mensagem {
+        background-color: transparent;
+
+        margin-bottom: 5%;
+        
         display: inline-block;
 
         vertical-align: top;

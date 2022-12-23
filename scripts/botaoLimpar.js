@@ -1,7 +1,7 @@
 document.getElementById("botao2").style.display = "none"; // deixa invísivel os botão copiar e limpar
-document.getElementById("text-box").style.display = "inline"; // deixa invísivel o texto
+//document.getElementById("text-box").style.display = "inline"; // deixa invísivel o texto
 
-var resetResultado = document.getElementById("text-resultado").value;
+//var resetResultado = document.getElementById("text-resultado").value;
 var resetMensagem = document.getElementById("mensagem").value;
 
 // Função de Limpar os textos.
@@ -16,7 +16,7 @@ document.getElementById("limpar").addEventListener("click", function () {
     function atualizaTela() {
         // deixa visível
         document.getElementById("botao2").style.display = "none";
-        document.getElementById("text-box").style.display = "inline";
+        //document.getElementById("text-box").style.display = "inline";
 
         document.getElementById("text-resultado").value = resetResultado;
         document.getElementById("mensagem").value = resetMensagem;

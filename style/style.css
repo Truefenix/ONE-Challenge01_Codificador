@@ -26,3 +26,20 @@ footer {
     font-size: 13px;
     margin: 20px 0 0;
 }
+.botao1 img {
+    float: left;
+    margin-right: 1%;
+    margin-left: 12%;
+}
+@media screen and (max-width: 1039px)  {
+
+    .botao1 img {
+        width: 40px;
+        margin-right: 1%;
+        margin-left: 5%;
+    }
+    .botao1 p {
+        margin-top: 1%;
+        font-size: 30px;
+    }
+}

@@ -77,13 +77,13 @@ textarea:focus {
     padding: 60% 0;
 }
 /* Tamanho Tablet */
-@media all and (max-width: 1039px) {
+@media screen and (max-width: 1039px) {
     
     /*Caixa Resultado*/
     .box-resultado {
         width: 90%;
 
-        height: 5%;
+        height: 50%;
 
         margin: 0;
     
@@ -94,13 +94,13 @@ textarea:focus {
         background-color: rgb(255, 255, 255);
     
         width: 90%;
-        height: 5%;
+        height: 50%;
 
         padding: 0;
     
         color: #df5505;
         font-family: 'inter';
-        font-size: 20px;
+        font-size: 50px;
     }
     
     #text-resultado::placeholder {
@@ -129,7 +129,8 @@ textarea:focus {
         padding-right: 0;
     }
     #mensagem {
-        font-size: 25px;
+        background-color: #df5505;
+        font-size: 50px;
     
         background-color: transparent;
         width: 100%;

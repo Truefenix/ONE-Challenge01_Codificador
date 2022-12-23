@@ -37,6 +37,11 @@ textarea:focus {
 }
 
 #mensagem {
+    background-image: url(../animated/Gif-urso-Fofo.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50%;
+
     font-family: 'Inter';
     font-size: 25px;
     color: #0A3871;

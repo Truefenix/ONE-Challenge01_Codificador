@@ -2,7 +2,7 @@
 var mensagem = document.getElementById("mensagem");
 var urso = document.getElementById("mensagem").style.background = "none"; // -> invísivel
 
-
+// Mostra o Urso
 function atualizaTela() {
 
     urso = document.getElementById("mensagem").style.background = ""; // -> vísivel
@@ -16,6 +16,7 @@ var clique = mensagem.addEventListener("click", function(event) {
     urso = document.getElementById("mensagem").style.background = "none"; // -> invísivel
 })
 
+// Esconde o Urso
 function atualizaTela2() {
 
     urso = document.getElementById("mensagem").style.background = "none"; // -> vísivel

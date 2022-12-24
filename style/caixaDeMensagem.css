@@ -56,9 +56,16 @@ textarea:focus {
     color: #194c8a;
 }
 
+/*.box-resultado img {
+    position: absolute;
+    margin: 10% 7%;
+    width: 17%;
+} */
+
 #text-resultado {
+    background-color: white !important; /* -> importante -> substitui todos os outros */
+
     margin-left: 3%;
-    background-color: rgb(255, 255, 255);
 
     padding: 5% 0 0 5%;
 

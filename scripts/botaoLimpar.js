@@ -8,7 +8,7 @@ var resetMensagem = document.getElementById("mensagem").value;
 document.getElementById("limpar").addEventListener("click", function () {
 
     // valor de resultado e mensagem = " "
-    var limparText = document.getElementById("text-resultado").value = "Nenhuma mensagem encontrada";
+    var limparText = document.getElementById("text-resultado").value;
     
     document.getElementById("mensagem").value = " ";
 
@@ -20,6 +20,19 @@ document.getElementById("limpar").addEventListener("click", function () {
 
         document.getElementById("text-resultado").value = resetResultado;
         document.getElementById("mensagem").value = resetMensagem;
+
+        // Mostra denovo o Urso 
+        function atualizaTela() {
+            urso = document.getElementById("mensagem").style.background = ""; // -> vísivel
+        }
+        setTimeout(atualizaTela, 1000);
+
+        // Esconde o Urso
+        function atualizaTela2() {
+            urso = document.getElementById("mensagem").style.background = "none"; // -> vísivel
+        }
+
+        setTimeout(atualizaTela2, 5000);
     }
     setTimeout(atualizaTela, 500); // atualiza 1 vez só
 })

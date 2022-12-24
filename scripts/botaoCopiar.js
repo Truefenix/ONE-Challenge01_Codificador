@@ -11,5 +11,5 @@ document.getElementById("copy").addEventListener("click", function () {
     alert("o texto foi copiado: " + copyText.value);
 
     // Copiar para  Celular
-    document.execCommand("copy")
+    document.execCommand("copy");
 })

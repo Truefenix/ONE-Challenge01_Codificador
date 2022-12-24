@@ -39,6 +39,17 @@ footer {
     margin-right: 1%;
     margin-left: 12%;
 }
+
+footer div {
+    display: inline-block;
+    width: 400px;
+}
+
+footer img {
+    vertical-align: bottom;
+    width: 70px;
+}
+
 @media screen and (max-width: 1039px)  {
 
     header h2 {

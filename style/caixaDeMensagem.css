@@ -37,7 +37,6 @@ textarea:focus {
 }
 
 #mensagem {
-    background:  none;
     background-image: url(../animated/Gif-urso-Fofo.gif);
     background-position: center;
     background-repeat: no-repeat;

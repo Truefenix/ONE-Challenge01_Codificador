@@ -1,6 +1,8 @@
 document.getElementById("botao2").style.display = "none"; // deixa invísivel os botão copiar e limpar
 //document.getElementById("text-box").style.display = "inline"; // deixa invísivel o texto
 
+var urso = document.getElementById("mensagem").style.background = "none"; // -> invísivel
+
 //var resetResultado = document.getElementById("text-resultado").value;
 var resetMensagem = document.getElementById("mensagem").value;
 
@@ -29,7 +31,7 @@ document.getElementById("limpar").addEventListener("click", function () {
 
         // Esconde o Urso
         function atualizaTela2() {
-            urso = document.getElementById("mensagem").style.background = "none"; // -> vísivel
+            urso = document.getElementById("mensagem").style.background = "none"; // -> invísivel
         }
 
         setTimeout(atualizaTela2, 5000);

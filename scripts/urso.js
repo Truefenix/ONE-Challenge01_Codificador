@@ -1,6 +1,7 @@
 // Seção animado
 var mensagem = document.getElementById("mensagem");
-var urso = document.getElementById("mensagem").style.background = "none"; // -> invísivel
+
+var urso = document.getElementById("mensagem").style.background; // -> invísivel
 
 // Mostra o Urso
 function atualizaTela() {

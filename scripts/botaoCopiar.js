@@ -9,4 +9,7 @@ document.getElementById("copy").addEventListener("click", function () {
     // o botão recebe o texto copiado -> navegador pc
     navigator.clipboard.writeText(copyText.value);
     alert("o texto foi copiado: " + copyText.value);
+
+    // Copiar para  Celular
+    document.execCommand("copy")
 })

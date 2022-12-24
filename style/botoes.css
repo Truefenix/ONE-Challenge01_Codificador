@@ -10,7 +10,7 @@
     color: white;
     font-family: 'Inter';
     font-style: normal;
-    font-size: 18px;
+    font-size: 22px;
     border-color: transparent;
     border-radius: 20px;
     transition: .2s background;
@@ -33,7 +33,7 @@
     color: #0A3871;
     font-family: 'Inter';
     font-style: normal;
-    font-size: 18px;
+    font-size: 22px;
     border-color: #0A3871;
     border-radius: 20px;
     transition: .2s background;
@@ -98,16 +98,22 @@
 @media screen and (max-width: 1039px) {
 
     /*Botão de Copiar e Colar*/
+    #botao2 {
+        margin-top: 2%;
+    }
+
     #copy {
         margin-left: 5%;
         width: 40%;
         padding: 20px 0;
+        font-size: 40px;
     }
     
     #limpar {
         margin-left: 3%;
         width: 40%;
         padding: 20px 0;
+        font-size: 40px;
     }
 
     /* Botão de Codificar e Descodificar */
@@ -121,11 +127,13 @@
         margin-left: 5%;
         width: 90%;
         padding: 50px 0;
+        font-size: 40px;
     }
     
     #botaoDescodificar {
         margin-left: 5%;
         width: 90%;
         padding: 50px 0;
+        font-size: 40px;
     }
 }

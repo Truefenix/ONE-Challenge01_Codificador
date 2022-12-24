@@ -36,12 +36,6 @@ textarea:focus {
     color: transparent;
 }
 
-/*#ursoFogo {
-    display: none;
-    position: absolute;
-    margin: 13%;
-}*/
-
 #mensagem {
     background-image: url(../animated/Gif-urso-Fofo.gif);
     background-position: center;

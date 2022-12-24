@@ -55,15 +55,8 @@ textarea:focus {
 #mensagem::placeholder {
     color: #194c8a;
 }
-
-/*.box-resultado img {
-    position: absolute;
-    margin: 10% 7%;
-    width: 17%;
-} */
-
 #text-resultado {
-    background-color: white !important; /* -> importante -> substitui todos os outros */
+    background-color: white; /* -> !importante -> substitui todos os outros */
 
     margin-left: 3%;
 

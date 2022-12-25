@@ -12,4 +12,5 @@ document.getElementById("copy").addEventListener("click", function () {
 
     // Copiar para  Celular
     document.execCommand("copy");
+    
 })

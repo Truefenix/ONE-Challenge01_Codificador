@@ -37,4 +37,5 @@ document.getElementById("limpar").addEventListener("click", function () {
         setTimeout(atualizaTela2, 5000);
     }
     setTimeout(atualizaTela, 500); // atualiza 1 vez só
+    
 })

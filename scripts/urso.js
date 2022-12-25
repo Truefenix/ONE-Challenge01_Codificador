@@ -23,4 +23,5 @@ function atualizaTela2() {
     urso = document.getElementById("mensagem").style.background = "none"; // -> vísivel
 }
 
+
 setTimeout(atualizaTela2, 10000); // atualiza 1 vez só.

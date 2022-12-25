@@ -46,4 +46,5 @@ function mudarLetra(texto) {
 
     // o valor de text-resultado = texto.
     document.getElementById("text-resultado").value = mudarLetra(texto);
+    
 })

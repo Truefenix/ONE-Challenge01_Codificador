@@ -44,4 +44,5 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
     
     // o valor de text-resultado = texto.
     document.getElementById("text-resultado").value = mudarLetra(texto);
+    
 })

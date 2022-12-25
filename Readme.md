@@ -54,6 +54,7 @@ https://www.alura.com.br/challenges/challenge-one-logica/sprint01-construa-decod
 </td>
 </tr>
 </table>
+
 <h4 align="center">
 By<a href="https://github.com/Eduardo-Roque" target="_blank"> Eduardo-Roque </a>🐠
 </h4>

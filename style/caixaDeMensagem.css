@@ -50,6 +50,8 @@ textarea:focus {
 
     padding-top: 3%;
     border: none; /*Retira o risco da borda*/
+
+    resize: none; /* não deixa a caixa, ser estendida */
 }
 #mensagem::placeholder {
     color: #194c8a;

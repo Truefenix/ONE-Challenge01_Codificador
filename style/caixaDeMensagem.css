@@ -74,6 +74,8 @@ textarea:focus {
 
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border: none; /*Retira o risco da borda*/
+
+    resize: none; /* não deixa a caixa, ser estendida */
 }
 
 #text-resultado::placeholder {

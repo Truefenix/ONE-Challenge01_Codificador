@@ -17,7 +17,7 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
 
         // Função que bloqueia caracteres especiais.
         function ContemCharEspecial(caracter) {
-            const charEspecial = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+            const charEspecial = /[`!@#$%^&*()_+\-=\[\]{};':"+\\|,<>\/?~1234567890]/;
             return charEspecial.test(caracter);
         }
 

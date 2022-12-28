@@ -29,7 +29,7 @@
 
         <main class="caixa">
             <section class="box-mensagem">
-                <textarea id="mensagem" rows="20" cols="12" placeholder="Digite seu texto" autofocus></textarea>
+                <textarea id="mensagem" rows="20" cols="12" placeholder="Digite seu texto" autofocus pattern="^[a-zA]+$"></textarea>
 
                 <div class="botao1">
                     <img src="image/exclamação.png"><p>Apenas letras minúsculas e sem acento.</p>
@@ -39,7 +39,7 @@
             </section>
                     
             <section class="box-resultado">
-                <textarea id="text-resultado" rows="10" cols="5" readonly placeholder=" "></textarea><!--readonly é só para ler/ sem escrever nele-->
+                <textarea id="text-resultado" rows="10" cols="5" readonly placeholder=" " pattern="^[a-zA]+$"></textarea><!--readonly é só para ler/ sem escrever nele-->
 
                 <div id="botao2">
                     <button id="copy">Copiar</button>

@@ -16,14 +16,14 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
     function mudarLetra(texto) {
 
         // Função que bloqueia caracteres especiais.
-        function containsSpecialChars(str) {
-            const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
-            return specialChars.test(str);
+        function ContemCharEspecial(caracter) {
+            const charEspecial = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+            return charEspecial.test(caracter);
         }
 
-        if (containsSpecialChars(texto)) {
+        if (ContemCharEspecial(texto)) {
 
-            alert('✅ string contains special characters');
+            alert('✅ Esse Texto Contém Character Especial');
 
             // Função de atualizar a mensagem em 2 segundos
             function atualizaTela() {

@@ -41,7 +41,7 @@ textarea:focus {
     background-repeat: no-repeat;
     background-size: 50%;
 
-    font-family: 'Inter', Arial;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 25px;
     color: #0A3871;
@@ -70,7 +70,7 @@ textarea:focus {
     border-radius: 32px;
 
     color: #df5505;
-    font-family: 'Inter', Arial;
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
     font-size: 35px;
 
@@ -111,7 +111,7 @@ textarea:focus {
         padding: 0;
     
         color: #df5505;
-        font-family: 'Inter', Arial;
+        font-family: 'Poppins', sans-serif;
         font-weight: bold;
         font-size: 50px;
     }

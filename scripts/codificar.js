@@ -15,7 +15,28 @@ document.getElementById("botaoCodificar").addEventListener("click", function () 
 var texto = document.getElementById("mensagem").value;
 
 function mudarLetra(texto) {
-    
+
+    // Função que bloqueia caracteres especiais.
+    function containsSpecialChars(str) {
+        const specialChars = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
+        return specialChars.test(str);
+    }
+
+    if (containsSpecialChars(texto)) {
+
+        alert('✅ string contains special characters');
+        
+        // Função de atualizar a mensagem em 2 segundos
+        function atualizaTela() {
+            document.getElementById("botao2").style.display = "none";
+
+            document.getElementById("text-resultado").value = resetResultado;
+            document.getElementById("mensagem").value = resetMensagem;
+        }
+        setTimeout(atualizaTela, 10); // atualiza 1 vez só
+
+    } else {
+
         // se for com acento.
         if(texto == texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "")) {
 
@@ -44,6 +65,7 @@ function mudarLetra(texto) {
                 setTimeout(atualizaTela, 10); // atualiza 1 vez só
             }
         }
+    }    
     // o valor de text-resultado = texto.
     document.getElementById("text-resultado").value = mudarLetra(texto);
     

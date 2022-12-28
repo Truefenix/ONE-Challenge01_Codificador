@@ -1,6 +1,8 @@
 document.getElementById("botao2").style.display = "none"; // deixa invísivel os botão copiar e limpar
 //document.getElementById("text-box").style.display = "inline"; // deixa invísivel o texto
 
+var urso = document.getElementById("mensagem").style.background = "none"; // -> invísivel
+
 var resetResultado = document.getElementById("text-resultado").value;
 var resetMensagem = document.getElementById("mensagem").value;
 
@@ -35,6 +37,13 @@ function mudarLetra(texto) {
         }
         setTimeout(atualizaTela, 10); // atualiza 1 vez só
 
+            document.getElementById("mensagem").style.background = ""; // -> vísivel
+            // Esconde o Urso
+            function atualizaTelaUrso() {
+                document.getElementById("mensagem").style.background = "none"; // -> invísivel
+            }
+            setTimeout(atualizaTelaUrso, 3000);
+
     } else {
 
         // se for com acento.
@@ -53,7 +62,7 @@ function mudarLetra(texto) {
 
                 alert("ERRO Só pode LETRAS Minúsculas!!!");
 
-                // Função de atualizar a mensagem em 2 segundos
+                // Função de atualizar a mensagem em 0.10 milésimos de seg.
                 function atualizaTela() {
                     // deixa visível
                     document.getElementById("botao2").style.display = "none";

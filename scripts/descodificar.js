@@ -33,6 +33,13 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
             document.getElementById("mensagem").value = resetMensagem;
             }
             setTimeout(atualizaTela, 10); // atualiza 1 vez só
+
+            document.getElementById("mensagem").style.background = ""; // -> vísivel
+            // Esconde o Urso
+            function atualizaTelaUrso() {
+                document.getElementById("mensagem").style.background = "none"; // -> invísivel
+            }
+            setTimeout(atualizaTelaUrso, 3000);
             
         } else {
 

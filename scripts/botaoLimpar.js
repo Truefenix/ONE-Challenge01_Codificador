@@ -10,7 +10,7 @@ var resetMensagem = document.getElementById("mensagem").value;
 document.getElementById("limpar").addEventListener("click", function () {
 
     // valor de resultado e mensagem = " "
-    var limparText = document.getElementById("text-resultado").value;
+    document.getElementById("text-resultado").value;
     
     document.getElementById("mensagem").value = " ";
 

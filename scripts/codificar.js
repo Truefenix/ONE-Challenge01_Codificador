@@ -17,12 +17,12 @@ var texto = document.getElementById("mensagem").value;
 function mudarLetra(texto) {
 
     // Só passa aquilo que estiver no ARRAY.
-    var caracteres = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
-                        'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 
-                            'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 
-                                'y', 'z'];
+    var caracteres = ['', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+                            'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 
+                                'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 
+                                    'y', 'z'];
 
-    for(var a = 0; a < caracteres.length; a++) {
+    for(var a = 1; a < caracteres.length; a++) {
     
         // se for igual ao ARRAY.
         if(texto.includes(caracteres[a])) {

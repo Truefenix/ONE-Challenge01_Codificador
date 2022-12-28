@@ -16,12 +16,12 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
     function mudarLetra(texto) {
 
         // Só passa aquilo que estiver no ARRAY.
-        var caracteres = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
-                            'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 
-                                'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 
-                                    'y', 'z'];
+        var caracteres = [' ', '', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+                                'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 
+                                    'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 
+                                        'y', 'z'];
 
-        for(var a = 0; a < caracteres.length; a++) {
+        for(var a = 1; a < caracteres.length; a++) {
         
             // se for igual ao ARRAY.
             if(texto.includes(caracteres[a])) {
@@ -36,7 +36,7 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
                 return texto;
             } else {
     
-                alert("Só pode letras sem acentos!!!");
+                alert("ERRO Só pode LETRAS Minúsculas!!!");
 
                 // Função de atualizar a mensagem em 2 segundos
                 function atualizaTela() {
@@ -54,6 +54,6 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
         }
     }
     // o valor de text-resultado = texto.
-    document.getElementById("text-resultado").value = mudarLetra(texto);
+    document.getElementById("text-resultado").value = mudarLetra(texto).length();
     
 })

@@ -42,6 +42,7 @@ textarea:focus {
     background-size: 50%;
 
     font-family: 'Inter', Arial;
+    font-weight: bold;
     font-size: 25px;
     color: #0A3871;
 
@@ -70,6 +71,7 @@ textarea:focus {
 
     color: #df5505;
     font-family: 'Inter', Arial;
+    font-weight: bold;
     font-size: 35px;
 
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -110,6 +112,7 @@ textarea:focus {
     
         color: #df5505;
         font-family: 'Inter', Arial;
+        font-weight: bold;
         font-size: 50px;
     }
     

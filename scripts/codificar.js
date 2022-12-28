@@ -15,25 +15,17 @@ document.getElementById("botaoCodificar").addEventListener("click", function () 
 var texto = document.getElementById("mensagem").value;
 
 function mudarLetra(texto) {
-
-    // Só passa aquilo que estiver no ARRAY.
-    var caracteres = ['', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
-                            'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 
-                                'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 
-                                    'y', 'z'];
-
-    for(var a = 1; a < caracteres.length; a++) {
     
-        // se for igual ao ARRAY.
-        if(texto.includes(caracteres[a])) {
+        // se for com acento.
+        if(texto == texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "")) {
 
             // muda as letras
-            texto = texto.replaceAll('e', 'enter')
-                            .replaceAll('i', 'imes')
-                                .replaceAll('a', 'ai')
-                                    .replaceAll('o', 'ober')
-                                        .replaceAll('u', 'ufat')
-                                            .replaceAll('A', 'a');
+            texto = texto.toLowerCase().replaceAll('e', 'enter')
+                            .toLowerCase().replaceAll('i', 'imes')
+                                .toLowerCase().replaceAll('a', 'ai')
+                                    .toLowerCase().replaceAll('o', 'ober')
+                                        .toLowerCase().replaceAll('u', 'ufat')
+                                            .toLowerCase().replaceAll('A', 'a');
             
             return texto;
         } else {
@@ -50,11 +42,8 @@ function mudarLetra(texto) {
                     document.getElementById("mensagem").value = resetMensagem;
                 }
                 setTimeout(atualizaTela, 10); // atualiza 1 vez só
-
-                break;
             }
         }
-    }
     // o valor de text-resultado = texto.
     document.getElementById("text-resultado").value = mudarLetra(texto);
     

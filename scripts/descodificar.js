@@ -15,27 +15,20 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
     
     function mudarLetra(texto) {
 
-        // Só passa aquilo que estiver no ARRAY.
-        var caracteres = [' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
-                                'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 
-                                    'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 
-                                        'y', 'z'];
-
-        for(var a = 1; a < caracteres.length; a++) {
-        
-            // se for igual ao ARRAY.
-            if(texto.includes(caracteres[a])) {
+            // se for sem acento.
+            if(texto == texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "")) {
     
                 // Muda as Letras
-                texto = texto.replaceAll('enter', 'e')
-                                .replaceAll('imes', 'i')
-                                    .replaceAll('ai', 'a')
-                                        .replaceAll('ober', 'o')
-                                            .replaceAll('ufat', 'u')
-                                                .replaceAll('A', 'a');
+                texto = texto.toLowerCase().replaceAll('enter', 'e')
+                                .toLowerCase().replaceAll('imes', 'i')
+                                    .toLowerCase().replaceAll('ai', 'a')
+                                        .toLowerCase().replaceAll('ober', 'o')
+                                            .toLowerCase().replaceAll('ufat', 'u');
                 
                 return texto;
-            } else {
+
+                // se for igual ao Array.  
+            } else if(texto.includes(caracteres[a])) {
     
                 alert("ERRO Só pode LETRAS Minúsculas!!!");
 
@@ -49,9 +42,6 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
                     document.getElementById("mensagem").value = resetMensagem;
                 }
                 setTimeout(atualizaTela, 10); // atualiza 1 vez só
-
-                break;
-            }
         }
     }
     // o valor de text-resultado = texto.

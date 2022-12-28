@@ -32,7 +32,8 @@ function mudarLetra(texto) {
                             .replaceAll('i', 'imes')
                                 .replaceAll('a', 'ai')
                                     .replaceAll('o', 'ober')
-                                        .replaceAll('u', 'ufat');
+                                        .replaceAll('u', 'ufat')
+                                            .replaceAll('A', 'a');
             
             return texto;
         } else {

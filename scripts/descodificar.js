@@ -16,7 +16,7 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
     function mudarLetra(texto) {
 
         // Só passa aquilo que estiver no ARRAY.
-        var caracteres = [' ', '', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+        var caracteres = [' ', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
                                 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 
                                     'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 
                                         'y', 'z'];
@@ -31,7 +31,8 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
                                 .replaceAll('imes', 'i')
                                     .replaceAll('ai', 'a')
                                         .replaceAll('ober', 'o')
-                                            .replaceAll('ufat', 'u');
+                                            .replaceAll('ufat', 'u')
+                                                .replaceAll('A', 'a');
                 
                 return texto;
             } else {
@@ -54,6 +55,6 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
         }
     }
     // o valor de text-resultado = texto.
-    document.getElementById("text-resultado").value = mudarLetra(texto).length();
+    document.getElementById("text-resultado").value = mudarLetra(texto);
     
 })

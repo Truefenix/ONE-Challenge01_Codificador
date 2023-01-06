@@ -32,7 +32,7 @@ https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---
 ```
 ### TRELLO - Decodificador de Texto - Alura
 ```bash
-https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?node-id=0%3A1&t=1InX4dUf4CVZrvsM-0
+https://trello.com/b/EmUFmjCv/decodificador-de-texto-alura-challenges-oracle-one
 ```
 <br>
 

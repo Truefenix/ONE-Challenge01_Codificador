@@ -21,9 +21,14 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
             return charEspecial.test(caracter);
         }
 
-        if (ContemCharEspecial(texto)) {
+        // Função que Bloqueia de A - Z Maiúsculo.
+        function containUppercase(str) {
+            return /[A-Z]/.test(str);
+        }
 
-            alert('✅ Esse Texto Contém Character Especial');
+        if (ContemCharEspecial(texto) || containUppercase(texto)) {
+
+            alert('✅ Só pode Letras Minúsculas e sem Acentos!!!');
 
             // Função de atualizar a mensagem em 2 segundos
             function atualizaTela() {
@@ -47,18 +52,18 @@ document.getElementById("botaoDescodificar").addEventListener("click", function 
             if(texto == texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "")) {
     
                 // Muda as Letras
-                texto = texto.toLowerCase().replaceAll('enter', 'e')
-                                .toLowerCase().replaceAll('imes', 'i')
-                                    .toLowerCase().replaceAll('ai', 'a')
-                                        .toLowerCase().replaceAll('ober', 'o')
-                                            .toLowerCase().replaceAll('ufat', 'u');
+                texto = texto.replaceAll('enter', 'e')
+                                .replaceAll('imes', 'i')
+                                    .replaceAll('ai', 'a')
+                                        .replaceAll('ober', 'o')
+                                            .replaceAll('ufat', 'u');
                 
                 return texto;
 
                 // se for igual ao Array.  
             } else if(texto.includes(caracteres[a])) {
     
-                alert("ERRO Só pode LETRAS Minúsculas!!!");
+                alert("ERRO NÃO PODE ACENTOSS!!!");
 
                 // Função de atualizar a mensagem em 2 segundos
                 function atualizaTela() {

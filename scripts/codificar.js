@@ -24,9 +24,14 @@ function mudarLetra(texto) {
         return charEspecial.test(caracter);
     }
 
-    if (ContemCharEspecial(texto)) {
+    // Função que Bloqueia de A - Z Maiúsculo.
+    function containUppercase(str) {
+        return /[A-Z]/.test(str);
+    }
 
-        alert('✅ Esse Texto Contém Character Especial');
+    if (ContemCharEspecial(texto) || containUppercase(texto)) {
+
+        alert('✅ Só pode Letras Minúsculas e sem Acentos!!!');
         
         // Função de atualizar a mensagem em 2 segundos
         function atualizaTela() {
@@ -46,21 +51,21 @@ function mudarLetra(texto) {
 
     } else {
 
-        // se for com acento.
+        // se for sem acento.
         if(texto == texto.normalize('NFD').replace(/[\u0300-\u036f]/g, "")) {
 
             // muda as letras
-            texto = texto.toLowerCase().replaceAll('e', 'enter')
-                            .toLowerCase().replaceAll('i', 'imes')
-                                .toLowerCase().replaceAll('a', 'ai')
-                                    .toLowerCase().replaceAll('o', 'ober')
-                                        .toLowerCase().replaceAll('u', 'ufat')
-                                            .toLowerCase().replaceAll('A', 'a');
+            texto = texto.replaceAll('e', 'enter')
+                            .replaceAll('i', 'imes')
+                                .replaceAll('a', 'ai')
+                                    .replaceAll('o', 'ober')
+                                        .replaceAll('u', 'ufat')
+                                            .replaceAll('A', 'a');
             
             return texto;
         } else {
 
-                alert("ERRO Só pode LETRAS Minúsculas!!!");
+                alert("ERRO NÃO PODE ACENTOS!!!");
 
                 // Função de atualizar a mensagem em 0.10 milésimos de seg.
                 function atualizaTela() {

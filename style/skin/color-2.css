@@ -69,6 +69,6 @@ main {
 
 /*================== Caixa de Resultado ======================*/
 #text-resultado {
-    background-color: #3b3b3b; /* -> !importante -> substitui todos os outros */
+    background-color: #3b3b3b;
     color: #df5505;
 }

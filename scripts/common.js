@@ -12,8 +12,10 @@ window.addEventListener('scroll', () => {
     styleSwitcher.classList.remove('open');
   }
 })
-
+ 
+// alternar estilos
 const alternateStyles = document.querySelectorAll('.alternate-style');
+document.getElementById('banner-noturno').style.display = "none";
 
 function setActiveStyle(color) {
 
@@ -21,8 +23,15 @@ function setActiveStyle(color) {
 
     if(color === style.getAttribute('title')) {    
       style.removeAttribute('disabled');
+
+      // Aparecer e Desaparecer
+      document.getElementById('banner-noturno').style.display = "none";
+      document.getElementById('banner-logo').style.display = "";
+
     } else {
       style.setAttribute('disabled', 'true');
+      document.getElementById('banner-noturno').style.display = "";
+      document.getElementById('banner-logo').style.display = "none";
     }
   })
 }

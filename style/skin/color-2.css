@@ -5,6 +5,12 @@
     background-color: #4a4a4a;
 }
 
+.banner {
+    position: relative;
+    width: 90%;
+    margin: 2% auto;
+}
+
 header {
     background: #4a4a4a;
 }

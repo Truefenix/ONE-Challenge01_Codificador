@@ -5,7 +5,18 @@ header {
 .banner {
     position: relative;
     width: 90%;
+}
+
+#banner-noturno {
+    position: absolute;
+    left: -20px;
+    width: 6%;
     margin: 0 auto;
+}
+
+#banner-logo {
+    margin-left: 6%;
+    width: 3%;
 }
 
 header h2 {

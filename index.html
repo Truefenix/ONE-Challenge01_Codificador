@@ -19,6 +19,26 @@
         <link rel="stylesheet" href="https://fonts.google.com/specimen/Rubik+Bubbles">
         <link rel="stylesheet" href="style/caixaDeMensagem.css">
         <link rel="stylesheet" href="style/botoes.css">
+
+        <!--===================== RemixIcon =========================-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!--=============== CSS ==============-->
+        <link rel="stylesheet" href="style/skin/color-2.css"> <!--Cor Primaria-->
+
+        <!--=============== Skin Colors ==============-->
+        <link rel="stylesheet" 
+            href="style/skin/color-1.css" 
+            class="alternate-style" 
+            title="color-1" 
+            disabled 
+        />
+        <link rel="stylesheet" 
+            href="style/skin/color-2.css"
+            class="alternate-style" 
+            title="color-2" 
+            disabled 
+        />
 	</head>
     <body>
         <header>
@@ -30,7 +50,7 @@
 
         <main class="caixa">
             <section class="box-mensagem">
-                <textarea id="mensagem" rows="20" cols="12" placeholder="Digite seu texto" autofocus pattern="^[a-zA]+$"></textarea>
+                <textarea id="mensagem" rows="20" cols="12" placeholder="Digite seu texto" autofocus></textarea>
 
                 <div class="botao1">
                     <img src="image/exclamação.png"><p>Apenas letras minúsculas e sem acento.</p>
@@ -49,6 +69,20 @@
             </section>
 
         </main>
+        <!--=============== Style Switcher ==============-->
+        <div class="style__switcher">
+            <div class="style__switcher-toggler">
+                <i class="ri-settings-4-fill"></i>
+            </div>
+
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <!--Modo Noturno-->
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            </div>
+        </div>
+
+        <!--=============== Footer ==============-->
         <footer>
             <div>
                 <a href="https://github.com/Eduardo-Roque" target="_blank"><img src="image/github.png" style="margin-right: 3%"></a>
@@ -57,6 +91,9 @@
             </div>
             <p id="Copyright">&copy; Copyright Eduardo-Roque - CHALLENGE ALURA - 2022</p>
         </footer>
+
+        <!--=============== Common ==============-->
+        <script src="scripts/common.js"></script>
     </body>
 </html>
 <script src="scripts/codificar.js"></script>

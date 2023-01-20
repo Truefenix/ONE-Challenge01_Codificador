@@ -1,5 +1,4 @@
 header {
-    background: #E5E5E5;
     padding: 20px 0;
 }
 
@@ -15,11 +14,6 @@ header h2 {
     font-family: 'Rubik Bubbles', sans-serif;
     font-weight: bold;
     font-size: 22px;
-    color: #0A3871;
-}
-/* CORPO PRINCIPAL */
-main {
-    background-color: #E5E5E5;
 }
 
 /*Final da Página*/
@@ -30,7 +24,6 @@ footer {
 }
 
 #Copyright {
-    color: #FFFFFF;
     font-size: 13px;
     margin: 20px 0 0;
 }
@@ -48,6 +41,59 @@ footer div {
 footer img {
     vertical-align: bottom;
     width: 70px;
+}
+
+/*=================== Style Switcher - Troca de Cor ==============*/
+.style__switcher {
+    position: fixed;
+    right: 0;
+    bottom: 20%;
+    padding: 0.625rem;
+    box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.4);
+    background-color: #4a4a4a;
+    z-index: 101;
+    transform: translate(100%);
+    transition: 0.3s;
+}
+
+.open {
+    transform: translate(0);
+}
+
+.style__switcher-toggler {
+    position: absolute;
+    height: 52px;
+    width: 52px;
+    right: 100%;
+    top: 0;
+    background-color: #4a4a4a;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.75rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.colors {
+    display: flex;
+    column-gap: 0.625rem;
+}
+
+.colors span {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 2px;
+}
+
+.color-1 {
+    background-color: #ffffff;
+}
+
+/* Modo Noturno */
+.color-2 {
+    background-color: #4a4a4a;
 }
 
 @media screen and (max-width: 1039px)  {

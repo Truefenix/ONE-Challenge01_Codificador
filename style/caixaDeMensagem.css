@@ -44,9 +44,7 @@ textarea:focus {
     font-family: 'Rubik Bubbles', sans-serif;
     font-weight: bold;
     font-size: 25px;
-    color: #0A3871;
 
-    background-color: transparent;
     width: 150%;
 
     padding-top: 3%;
@@ -54,12 +52,7 @@ textarea:focus {
 
     resize: none; /* não deixa a caixa, ser estendida */
 }
-#mensagem::placeholder {
-    color: #194c8a;
-}
 #text-resultado {
-    background-color: white; /* -> !importante -> substitui todos os outros */
-
     margin-left: 3%;
 
     padding: 5% 0 0 5%;
@@ -69,7 +62,6 @@ textarea:focus {
 
     border-radius: 32px;
 
-    color: #df5505;
     font-family: 'Rubik Bubbles', sans-serif;
     font-weight: bold;
     font-size: 35px;
@@ -81,13 +73,15 @@ textarea:focus {
 }
 
 #text-resultado::placeholder {
-    background-image: url(../image/pesquisa.svg);
+    background-image: url(../image/pesquisa1.svg);
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: 85%;
 
     padding: 60% 0;
 }
+
 /* Tamanho Tablet */
 @media screen and (max-width: 1039px) {
     

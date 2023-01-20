@@ -11,6 +11,11 @@
     margin: 2% auto;
 }
 
+.style__switcher-toggler {
+    background-color: #eb681c;
+    color: #fff;
+}
+
 header {
     background: #4a4a4a;
 }

@@ -123,6 +123,7 @@ textarea:focus {
     .box-mensagem {
         background-color: transparent;
 
+        margin-top: 10%;
         margin-bottom: 5%;
         
         display: inline-block;

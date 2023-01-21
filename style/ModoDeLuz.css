@@ -1,0 +1,174 @@
+.dark {
+	color: #fff;
+}
+
+.light {
+	color: #000;
+}
+
+/* Detecção de modo */
+@media (prefers-color-scheme: light) {
+    .color-1 {
+        background-color: #4a4a4a;
+    }
+    .color-2 {
+        background-color: #000000;
+    }
+    
+    header {
+        background: #E5E5E5;
+    }
+    header h2 {
+        color: #0A3871;
+    }
+    main {
+        background-color: #E5E5E5;
+    }
+    #Copyright {
+        color: #FFFFFF;
+    }
+    
+    /* Botões */
+    #botaoCodificar {
+        background-color: #0A3871; /* cor do botao */
+        color: white;
+    }
+    #botaoCodificar:hover{
+        background-color: white;
+        color: #0A3871;
+        border-color: #0A3871;
+    }
+    #botaoDescodificar {
+        background-color: white;
+        color: #0A3871;
+        border-color: #0A3871;
+    }
+    #botaoDescodificar:hover {
+        background-color: #0A3871;
+        color: white;
+    }
+    
+    /* Btoão Copiar e Limpar */
+    #copy {
+        background-color: white;
+        color: #0A3871;
+        border-color: #0A3871;
+    }
+    #copy:hover {
+        background-color: #0A3871;
+        color: white;
+    }
+    #limpar {
+        background-color: white;
+        color: #0A3871;
+        border-color: #0A3871;
+    }
+    #limpar:hover {
+        background-color: #0A3871;
+        color: white;
+    }
+    
+    /* Caixa de Mensagem */
+    #mensagem {
+        color: #0A3871;
+        background-color: transparent;
+    }
+    #mensagem::placeholder {
+        color: #194c8a;
+    }
+    
+    /*================== Caixa de Resultado ======================*/
+    
+    #text-resultado {
+        background-color: #ffffff;
+        color: #df5505;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .color-1 {
+        background-color: #ffffff;
+    }
+    .color-2 {
+        background-color: #4a4a4a;
+    }
+    
+    .banner {
+        position: relative;
+        width: 90%;
+        margin: 2% auto;
+    }
+    
+    .style__switcher-toggler {
+        background-color: #eb681c;
+        color: #fff;
+    }
+    
+    header {
+        background: #4a4a4a;
+    }
+    header h2 {
+        color: #eb681c;
+    }
+    main {
+        background-color: #4a4a4a;
+    }
+    #Copyright {
+        color: #fff;
+    }
+    
+    /* Botões */
+    #botaoCodificar {
+        background-color: #eb681c; /* cor do botao */
+        color: #242323;
+    }
+    #botaoCodificar:hover{
+        background-color: #242323;
+        color: #eb681c;
+        border-color: #242323;
+    }
+    #botaoDescodificar {
+        background-color: #242323;
+        color: #eb681c;
+        border-color: #eb681c;
+    }
+    #botaoDescodificar:hover {
+        background-color: #eb681c;
+        color: #242323;
+    }
+    
+    /* Btoão Copiar e Limpar */
+    #copy {
+        background-color: #242323;
+        color: #eb681c;
+        border-color: #eb681c;
+    }
+    #copy:hover {
+        background-color: #eb681c;
+        color: #242323;
+    }
+    #limpar {
+        background-color: #242323;
+        color: #eb681c;
+        border-color: #eb681c;
+    }
+    #limpar:hover {
+        background-color: #eb681c;
+        color: #242323;
+    }
+    
+    /* Caixa de Mensagem */
+    #mensagem {
+        color: #eb681c;
+        background-color: transparent;
+    }
+    #mensagem::placeholder {
+        color: #eb681c;
+    }
+    
+    /*================== Caixa de Resultado ======================*/
+    #text-resultado {
+        background-color: #3b3b3b;
+        color: #df5505;
+    }
+  }

@@ -130,4 +130,25 @@ footer img {
         margin-left: 6%;
         width: 5%;
     }
+
+    /*  */
+    .style__switcher {
+        padding: 0.625rem;
+        z-index: 101;
+    }
+
+    /* Quadrado das cor */
+    .colors span {
+        height: 100px;
+        width: 100px;
+    }
+
+    /*  */
+    .style__switcher-toggler {
+        height: 120px;
+        width: 120px;
+        right: 100%;
+        line-height: 120px;
+        font-size: 5rem;
+    }
 }
